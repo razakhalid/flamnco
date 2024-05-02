@@ -1,0 +1,23 @@
+{
+  "name": "flamnco",
+  "version": "1.0.0",
+  "description": "An ecommerce guitar store",
+  "main": "server/src/server.js",
+  "scripts": {
+    "start": "node server/src/server.js",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/razakhalid/flamnco.git"
+  },
+  "author": "Raza Khalid",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/razakhalid/flamnco/issues"
+  },
+  "homepage": "https://github.com/razakhalid/flamnco#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
