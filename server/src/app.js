@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const path = require("path");
+const db = require("./services/db");
 const app = express();
 
 app.use(express.json());
@@ -9,10 +10,10 @@ app.use(cors({
 }));
 app.use(express.static(path.join(__dirname, "..", "..", "client", "dist", "client", "browser")));
 
-app.get('/api', (req, res) => {
-  res.status(200).json({
-    raza: "khalid"
-  })
+app.get('/api', async (req, res) => {
+  const rows = await db.query("select * from products");
+  console.log(rows);
+  res.status(200).json(rows);
 });
 
 app.get('/*', (req, res) => {
