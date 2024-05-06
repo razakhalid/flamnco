@@ -1,14 +1,12 @@
 const { Pool } = require("pg");
 
-const config = {
+const pool = new Pool({
     connectionString: process.env.DATABASE_URL,
     max: 3
-}
+});
 
-const pool = new Pool(config);
-
-function connect() {
-    return pool.connect((err) => {
+async function connect() {
+    return await pool.connect((err) => {
         if (err) {
             console.error(`Could not connect to db: ${err}`);
         }  else {
@@ -16,6 +14,11 @@ function connect() {
         }
     });
 }
+
+async function disconnect() {
+    return await pool.end();
+}
+
 function query(query) {
     try {
         return pool.query(query);
@@ -26,5 +29,9 @@ function query(query) {
 
 module.exports = {
     connect,
+    disconnect,
     query
 }
+
+
+

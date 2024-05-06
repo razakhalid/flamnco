@@ -13,9 +13,8 @@ export class AppComponent {
   constructor(private http:HttpClient) {}
   title = 'client';
   ngOnInit() {
-    const baseUrl:string = isDevMode() ? "http://localhost:8080" : window.location.origin;
-    const url:string = `${baseUrl}/api`;
-    console.log("url: ", url);
+    const baseUrl:string = (isDevMode() ? "http://localhost:8080" : window.location.origin) + '/api';
+    const url:string = `${baseUrl}/products`;
     this.http.get(url).subscribe((response) => console.log(response));
   }
 }

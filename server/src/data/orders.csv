@@ -1,0 +1,65 @@
+order_id,order_total,order_item_ids,customer_name,customer_phone,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_zip,delivery_address_city,delivery_address_country
+AFC9K3,5169.97,EG-1A2B3C4D,Kenny Brown,(201) 555-0123,123 Main Street,Apt 101,AL,10001,New York City,USA 
+JHD5T9,932.99,EG-5E6F7G8H,Bobby Brown,(202) 555-0456,456 Elm Street,Suite 202,AK,20001,Los Angeles,USA 
+PLM2Q1,423.99,EG-9I0J1K2L,Jane Smith,(203) 555-0789,789 Oak Avenue,Unit 303,AZ,30301,Chicago,USA 
+NSX7R4,932.99,EG-N2O3P4Q5R,Michael Johnson,(204) 555-0123,101 Maple Lane,Building A,AR,40001,Houston,USA 
+VZM6L2,2675.99,EG-6S7T8U9V,Emily Brown,(205) 555-0456,222 Pine Street,Apartment B,CA,50001,Phoenix,USA 
+GHP3N8,932.99,EG-BBCDD1E2,David Wilson,(206) 555-0789,333 Cedar Avenue,Floor 1,CO,60001,Philadelphia,USA 
+IJK1O7,932.99,EG-3FG4HI5JJ,Jennifer Taylor,(207) 555-0123,444 Birch Lane,Room 2,CT,70001,San Antonio,USA 
+YTR4P9,2675.99,EG-6K7LM8N9O,William Martinez,(208) 555-0456,555 Willow Street,Level 3,DE,80001,San Diego,USA 
+XCF8U2,229.99,EG-PPQQRRSST,Mary Anderson,(209) 555-0789,666 Magnolia Avenue,Flat 4,FL,90001,Dallas,USA 
+LMN2W6,289.99,EG-0UV1WW2XX,Richard Thomas,(210) 555-0123,777 Sycamore Lane,Floor 5,GA,1001,San Jose,USA 
+POD7S1,932.99,EG-YY3ZZ4AB,Linda Lee,(211) 555-0456,888 Chestnut Street,Unit 6,HI,2001,Austin,USA 
+VBN9X4,932.99,EG-6C7C8D9E0,Joseph White,(212) 555-0789,999 Walnut Avenue,Suite 7,ID,3001,Jacksonville,USA 
+WER3Y8,492.99,EG-F1F2G3G4H,Patricia Garcia,(213) 555-0123,111 Spruce Lane,Apartment 8,IL,4001,San Francisco,USA 
+KJH5Z1,756.99,EG-5I6J7J8K9L,Robert Jones,(214) 555-0456,222 Cherry Street,Apt 9,IN,5001,Indianapolis,USA 
+QWE8A2,229.99,EG-0M1M2N3N4O,Barbara Rodriguez,(215) 555-0789,333 Aspen Avenue,Building 10,IA,6001,Columbus,USA 
+MNB1B4,756.99,EG-5PP6QQ7RR,Daniel Harris,(216) 555-0123,444 Cypress Lane,Floor 11,KS,7001,Fort Worth,USA 
+IOP4C7,229.99,EG-8S9TT0UUV,Nancy Jackson,(217) 555-0456,555 Fir Street,Room 12,KY,8001,Charlotte,USA 
+ASD7D9,5169.97,EG-1WW2XX3YY,Matthew Lewis,(218) 555-0789,666 Juniper Avenue,Level 13,LA,9001,Seattle,USA 
+ZXC9E6,756.99,EG-4ZZ5A6BB7C,Karen Perez,(219) 555-0123,777 Redwood Lane,Suite 14,ME,11001,Denver,USA 
+RFG2F8,489.99,EG-8DD9EEE0F,Christopher Hall,(220) 555-0456,888 Hemlock Street,Apartment 15,MD,12001,El Paso,USA 
+TGB1G2,229.99,EG-1G2HH3II4J,Margaret Martinez,(221) 555-0789,999 Locust Avenue,Unit 16,MA,13001,Detroit,USA 
+EDC6H5,5169.97,AG-1A2B3C4D,Charles Clark,(222) 555-0123,111 Laurel Lane,Flat 17,MI,14001,Washington,USA 
+UIO0I4,932.99,AG-5E6F7G8H,Betty Walker,(223) 555-0456,222 Alder Street,Floor 18,MN,15001,Boston,USA 
+OLP5J1,229.99,AG-9I0J1K2L,Andrew Young,(224) 555-0789,333 Sequoia Avenue,Building 19,MS,16001,Memphis,USA 
+QAZ2K3,489.99,AG-N2O3P4Q5R,Helen King,(225) 555-0123,444 Birchwood Lane,Apt 20,MO,17001,Nashville,USA 
+WSX3L5,932.99,AG-6S7T8U9V,George Hernandez,(226) 555-0456,555 Dogwood Street,Suite 21,MT,18001,Portland,USA 
+RFV4M8,932.99,AG-BBCDD1E2,Susan Scott,(227) 555-0789,666 Hickory Avenue,Unit 22,NE,19001,Oklahoma City,USA 
+TGB7N6,932.99,AG-3FG4HI5JJ,Edward Green,(228) 555-0123,777 Pinecone Lane,Apartment 23,NV,21001,Las Vegas,USA 
+YHN8O1,932.99,AG-6K7LM8N9O,Lisa Nguyen,(229) 555-0456,888 Willowbrook Street,Floor 24,NH,22001,Baltimore,USA 
+UJM9P2,229.99,AG-PPQQRRSST,Brian Lopez,(230) 555-0789,999 Oakwood Avenue,Room 25,NJ,23001,Louisville,USA 
+IKJ0Q4,756.99,AG-0UV1WW2XX,Jessica Hill,(231) 555-0123,111 Cedarwood Lane,Level 26,NM,24001,Milwaukee,USA 
+YTR5R6,932.99,AG-YY3ZZ4AB,Steven Adams,(232) 555-0456,222 Birchhill Street,Flat 27,NY,25001,Albuquerque,USA 
+UJM8S9,932.99,AG-6C7C8D9E0,Dorothy Wright,(267) 555-0123,333 Elmwood Avenue,Unit 28,NC,26001,Tucson,USA 
+VBN7T2,932.99,AG-F1F2G3G4H,Paul Turner,(268) 555-0456,444 Maplewood Lane,Building 29,ND,27001,Fresno,USA 
+WSX6U3,932.99,AG-5I6J7J8K9L,Ashley Martin,(269) 555-0789,555 Oakhill Street,Floor 30,OH,28001,Sacramento,USA 
+QAZ5V1,932.99,AG-0M1M2N3N4O,Kenneth Torres,(270) 555-0123,666 Pineview Avenue,Room 31,OK,29001,Kansas City,USA 
+EDC4W3,932.99,AG-5PP6QQ7RR,Sandra Hall,(271) 555-0456,777 Sprucehill Lane,Level 32,OR,31001,Long Beach,USA 
+RFV3X5,932.99,AG-8S9TT0UUV,Mark Morris,(272) 555-0789,888 Willowridge Street,Suite 33,PA,32001,Mesa,USA 
+PLM2Y8,932.99,AG-1WW2XX3YY,Carol Allen,(273) 555-0123,999 Cedarcrest Avenue,Apartment 34,RI,33001,Atlanta,USA 
+NSX1Z9,932.99,AG-4ZZ5A6BB7C,James Diaz,(274) 555-0456,111 Birchwoodhill Lane,Apt 35,SC,34001,Colorado Springs,USA 
+VZM0A2,932.99,AG-8DD9EEE0F,Michelle Lee,(275) 555-0789,222 Maplehurst Street,Floor 36,SD,35001,Virginia Beach,USA 
+GHP9B5,932.99,AG-1G2HH3II4J,Ronald Smith,(276) 555-0123,333 Oakridge Avenue,Building 37,TN,36001,Raleigh,USA 
+IJK8C3,932.99,"CG-J7K4, CG-P9Q2, CG-X3L6",Laura Brown,(277) 555-0456,444 Pinewoodhill Lane,Unit 38,TX,37001,Omaha,USA 
+WER7D6,932.99,"CG-D5M8, CG-V1N9, CG-T2R5",Donald Taylor,(278) 555-0789,555 Willowvale Street,Suite 39,UT,38001,Miami,USA 
+KJH6E9,932.99,"CG-Y8S1, CG-H4T9, CG-C6U3",Sarah Wilson,(279) 555-0123,666 Cedarwoodridge Avenue,Apartment 40,VT,39001,Oakland,USA 
+QWE5F1,932.99,"CG-M7V9, CG-F9W1, CG-Q3X6",Frank Johnson,(280) 555-0456,777 Maplewoodvale Lane,Flat 41,VA,41001,Minneapolis,USA 
+MNB4G3,199.99,"CG-W2Y4, CG-Z5A1, CG-E8B7",Kimberly Harris,(281) 555-0789,888 Birchhillcrest Street,Room 42,WA,42001,Tulsa,USA 
+POD3H5,1699.99,"CG-N1C6, CG-K4D9, CG-U6E2",Larry Rodriguez,(282) 555-0123,999 Pinehurstwood Avenue,Level 43,WV,43001,Wichita,USA 
+IOP2I8,549.99,"CG-I2F8, CG-O3G7, CG-A7H4",Donna Jackson,(283) 555-0456,111 Oakdalehill Lane,Unit 44,WI,44001,New Orleans,USA 
+ASD1J7,799.99,"CG-J6I8, CG-P5J3, CG-X9K1",Daniel Lewis,(284) 555-0789,222 Cedarglen Street,Floor 45,WY,45001,Arlington,USA 
+ZXC0K6,1699.99,CG-D3L7,Carolyn Perez,(285) 555-0123,333 Birchwoodhaven Avenue,Building 46,AL,46001,Cleveland,USA 
+RFG9L5,1999.99,EG-6S7T8U9V,Kevin Hall,(286) 555-0456,444 Maplewooddale Lane,Apartment 47,AK,47001,Bakersfield,USA 
+TGB8M4,569.99,AG-BBCDD1E2,Amanda Clark,(287) 555-0789,555 Willowcrest Street,Suite 48,AZ,48001,Tampa,USA 
+EDC7N2,499.99,AG-6K7LM8N9O,Justin Walker,(288) 555-0123,666 Cedarwoodhaven Avenue,Flat 49,AR,49001,Aurora,USA 
+UIO6O1,1299.99,AG-PPQQRRSST,Betty Young,(289) 555-0456,777 Pinevale Lane,Room 50,CA,51001,Honolulu,USA 
+OLP5P3,549.99,AG-0UV1WW2XX,Christopher Hernandez,(290) 555-0789,888 Oakhillcrest Street,Floor 51,CO,52001,Anaheim,USA 
+QAZ4Q8,359.99,EG-YY3ZZ4AB,Brenda Scott,(291) 555-0123,999 Birchview Avenue,Level 52,CT,53001,Santa Ana,USA 
+WSX3R5,999.99,EG-6C7C8D9E0,Jerry Green,(292) 555-0456,111 Maplewoodglade Lane,Apartment 53,WY,54001,Corpus Christi,USA 
+RFV2S1,569.99,EG-F1F2G3G4H,Deborah Nguyen,(293) 555-0789,222 Oakwoodvale Street,Building 54,AL,55001,Riverside,USA 
+PLM1T4,499.99,EG-5I6J7J8K9L,Ryan Lopez,(294) 555-0123,333 Pinehursthaven Avenue,Suite 55,AK,56001,St. Louis,USA 
+NSX0U7,1299.99,EG-0M1M2N3N4O,Pamela Hill,(295) 555-0456,444 Cedarwoodglade Lane,Unit 56,AZ,57001,Lexington,USA 
+VZM9V5,549.99,AG-5PP6QQ7RR,Gary Adams,(296) 555-0789,555 Willowwoodvale Street,Flat 57,AR,58001,Stockton,USA 
+GHP8W3,359.99,"CG-X3L6, CG-D5M8",Debra Wright,(297) 555-0123,666 Oakwoodglade Avenue,Room 58,CA,59001,Pittsburgh,USA 
+IJK7X,999.99,"CG-V1N9, CG-T2R5",Scott Turner,(298) 555-0456,777 Pinevalewood Lane,Floor 59,CO,56002,Cincinnati,USA 

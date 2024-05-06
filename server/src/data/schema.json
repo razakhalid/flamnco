@@ -1,0 +1,32 @@
+{
+  "product": {
+    "product_id": "string",
+    "product_name": "string",
+    "product_manufacturer": "string",
+    "product_qty_remaining": "number",
+    "product_price": "number",
+    "product_category": "string",
+    "product_img_url": "string"
+  },
+  "customer": {
+    "customer_id": "number",
+    "customer_name": "string",
+    "customer_phone": "string",
+    "customer_address_id": "number"
+  },
+  "delivery_address": {
+    "delivery_address_id": "number",
+    "delivery_address_1": "string",
+    "delivery_address_2": "string",
+    "delivery_address_state": "string",
+    "delivery_address_city": "string",
+    "delivery_address_zip": "number",
+    "delivery_address_country": "string"
+  },
+  "ordertbl": {
+    "order_id": "string",
+    "order_total": "number",
+    "order_product_ids": "string",
+    "customer_id": "number"
+  }
+}

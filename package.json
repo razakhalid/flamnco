@@ -5,7 +5,12 @@
   "main": "server/src/server.js",
   "scripts": {
     "start": "node server/src/server.js",
-    "test": "test"
+    "test": "jest"
+  },
+  "jest": {
+    "modulePathIgnorePatterns": [
+      "client"
+    ]
   },
   "repository": {
     "type": "git",
@@ -19,7 +24,12 @@
   "homepage": "https://github.com/razakhalid/flamnco#readme",
   "dependencies": {
     "cors": "^2.8.5",
+    "csv-parser": "^3.0.0",
     "express": "^4.19.2",
     "pg": "^8.11.5"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
   }
 }
