@@ -1,0 +1,26 @@
+<div class="grid-container">
+  <h1>Browse Guitars</h1>
+  <div class="grid">
+    <app-grid-item
+      *ngFor="let item of items"
+      [itemName]="item && item.product_name"
+      [itemCategory]="item && item.product_category"
+      [itemPrice]="item && item.product_price"
+      [itemImgUrl]="item && item.product_img_url"
+      [itemManufacturer]="item && item.product_manufacturer"
+      [itemQtyRemaining]="item && item.product_qty_remaining"
+    ></app-grid-item>
+  </div>
+</div>
+
+<style>
+  .grid-container {
+    border: 1px solid black;
+    padding: 2rem;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 800px;
+  }
+</style>

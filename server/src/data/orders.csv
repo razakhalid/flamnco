@@ -1,4 +1,4 @@
-order_id,order_total,order_item_ids,customer_name,customer_phone,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_zip,delivery_address_city,delivery_address_country
+order_id,order_total,order_product_ids,customer_name,customer_phone,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_zip,delivery_address_city,delivery_address_country
 AFC9K3,5169.97,EG-1A2B3C4D,Kenny Brown,(201) 555-0123,123 Main Street,Apt 101,AL,10001,New York City,USA 
 JHD5T9,932.99,EG-5E6F7G8H,Bobby Brown,(202) 555-0456,456 Elm Street,Suite 202,AK,20001,Los Angeles,USA 
 PLM2Q1,423.99,EG-9I0J1K2L,Jane Smith,(203) 555-0789,789 Oak Avenue,Unit 303,AZ,30301,Chicago,USA 

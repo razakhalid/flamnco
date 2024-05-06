@@ -16,4 +16,12 @@ export class ApiService {
       console.log(err);
     }
   }
+  async post(path:string, body:any) {
+    try {
+      const response = await axios.post(this.baseUrl + path, body);
+      console.log(response);
+    } catch (err) {
+      console.log(err);
+    }
+  }
 }
