@@ -9,4 +9,11 @@ main {
   margin: 0 2rem;
   display: flex;
   justify-content: center;
+  padding: var(--gap-sm);
+}
+
+@media (min-width: 500px) {
+  main {
+    padding: var(--gap-md);
+  }
 }

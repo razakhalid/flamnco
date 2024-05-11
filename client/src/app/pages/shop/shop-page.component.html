@@ -1,16 +1,22 @@
 <div class="shop-page">
   <div class="categories-menu">
-    <h2>Shop by Category</h2>
-    <div class="categories">
-      <div *ngFor="let category of categories" class="category">
+    <h2 class="font-bold text-center">Shop by Category</h2>
+    <div class="grid">
+      <div *ngFor="let category of categories" class="item">
         <img [src]="category.imgUrl" [alt]="category.label">
-        <p>{{ category.label }}</p>
+        <p class="font-bold mt-xxs">{{ category.label }}</p>
       </div>
     </div>
   </div>
-<!--  <app-grid-->
-<!--    [items]="products"-->
-<!--  ></app-grid>-->
+
+  <section class="grid">
+    <div class="item" *ngFor="let product of products">
+      <img src="../../../assets/electric-guitar.jpeg" alt="">
+      <p class="font-bold mt-xxs">{{ product.product_name }}</p>
+      <p class="text-highlight mt-xxs">{{ product.product_price }}</p>
+    </div>
+  </section>
+
 <!--  <form (ngSubmit)="handleSubmit()">-->
 <!--    <div>-->
 <!--      <label for="customer_name">Name: </label>-->

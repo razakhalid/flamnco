@@ -1,5 +1,4 @@
 import {Component, isDevMode} from '@angular/core';
-import {GridComponent} from "../../grid/grid.component";
 import {ApiService} from "../../api.service";
 import {FormsModule} from "@angular/forms";
 import {NgFor} from "@angular/common";
@@ -7,7 +6,7 @@ import {NgFor} from "@angular/common";
 @Component({
   selector: 'app-shop',
   standalone: true,
-  imports: [GridComponent, FormsModule, NgFor],
+  imports: [FormsModule, NgFor],
   templateUrl: './shop-page.component.html',
   styleUrl: './shop-page.component.css'
 })
@@ -30,7 +29,15 @@ export class ShopPageComponent {
     order_total: 576.99,
     order_product_ids: "EG-4ZZ5A6BB7C"
   };
-  products = [];
+  products: Array<{
+  "product_id": string,
+  "product_name": string
+  "product_manufacturer": string
+  "product_qty_remaining": number,
+  "product_price": number,
+  "product_category": string,
+  "product_img_url": string
+  }>= [];
   constructor(private api:ApiService) {}
   ngOnInit() {
     this.getAllProducts();
