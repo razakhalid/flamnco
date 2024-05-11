@@ -1,0 +1,29 @@
+.categories-menu {
+  margin-top: var(--gap-md);
+}
+.categories-menu h2 {
+  text-align: center;
+  font-weight: bold;
+}
+.categories {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 2rem;
+}
+.categories-menu .category {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.categories-menu .category p {
+  font-weight: bold;
+  text-align: center;
+  word-break: break-word;
+  margin-top: var(--gap-xs);
+}
+
+img {
+  max-width: 150px;
+  max-height: 150px;
+}

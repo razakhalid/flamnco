@@ -1,16 +1,23 @@
 import {Component, isDevMode} from '@angular/core';
-import {GridComponent} from "../grid/grid.component";
-import {ApiService} from "../api.service";
+import {GridComponent} from "../../grid/grid.component";
+import {ApiService} from "../../api.service";
 import {FormsModule} from "@angular/forms";
+import {NgFor} from "@angular/common";
 
 @Component({
-  selector: 'app-shop-page',
+  selector: 'app-shop',
   standalone: true,
-  imports: [GridComponent, FormsModule],
+  imports: [GridComponent, FormsModule, NgFor],
   templateUrl: './shop-page.component.html',
   styleUrl: './shop-page.component.css'
 })
 export class ShopPageComponent {
+  categories: Array<{ label: string, imgUrl: string }> = [
+    { label: "Electric", imgUrl: "../../assets/electric-guitar.jpeg" },
+    { label: "Acoustic", imgUrl: "../../assets/acoustic-guitar.jpeg" },
+    { label: "Classical & Flamenco", imgUrl: "../../assets/classical-guitar.jpeg" },
+    { label: "Bass", imgUrl: "../../assets/bass-guitar.jpeg" }
+  ];
   checkout_info:any = {
     customer_name: "Raza Khalid",
     customer_phone: "(123) 123-1234",
