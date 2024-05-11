@@ -1,7 +1,8 @@
-import {Component, isDevMode} from '@angular/core';
-import {ApiService} from "../../api.service";
+import {Component, isDevMode, inject} from '@angular/core';
 import {FormsModule} from "@angular/forms";
 import {NgFor} from "@angular/common";
+import {Category, Product} from "../../types";
+import {ProductService} from "../../services/product.service";
 
 @Component({
   selector: 'app-shop',
@@ -11,11 +12,13 @@ import {NgFor} from "@angular/common";
   styleUrl: './shop-page.component.css'
 })
 export class ShopPageComponent {
-  categories: Array<{ label: string, imgUrl: string }> = [
-    { label: "Electric", imgUrl: "../../assets/electric-guitar.jpeg" },
-    { label: "Acoustic", imgUrl: "../../assets/acoustic-guitar.jpeg" },
-    { label: "Classical & Flamenco", imgUrl: "../../assets/classical-guitar.jpeg" },
-    { label: "Bass", imgUrl: "../../assets/bass-guitar.jpeg" }
+  productService:ProductService = inject(ProductService);
+  products: any = [];
+  categories: Array<Category> = [
+    { label: "Electric Guitars", category: "Electric Guitar", imgUrl: "../../assets/electric-guitar.jpeg", filterActive: false },
+    { label: "Acoustic Guitars", category: "Acoustic Guitar", imgUrl: "../../assets/acoustic-guitar.jpeg", filterActive: false },
+    { label: "Classical & Flamenco Guitars", category: "Classical Guitar", imgUrl: "../../assets/classical-guitar.jpeg", filterActive: false },
+    { label: "Bass Guitars", category: "Bass Guitar", imgUrl: "../../assets/bass-guitar.jpeg", filterActive: false }
   ];
   checkout_info:any = {
     customer_name: "Raza Khalid",
@@ -29,28 +32,18 @@ export class ShopPageComponent {
     order_total: 576.99,
     order_product_ids: "EG-4ZZ5A6BB7C"
   };
-  products: Array<{
-  "product_id": string,
-  "product_name": string
-  "product_manufacturer": string
-  "product_qty_remaining": number,
-  "product_price": number,
-  "product_category": string,
-  "product_img_url": string
-  }>= [];
-  constructor(private api:ApiService) {}
   ngOnInit() {
     this.getAllProducts();
   }
   async getAllProducts() {
-    const products = await this.api.get('/products');
-    this.products = products;
-    console.log(products);
+    this.products = await this.productService.getProducts();
+    console.log(this.products);
   }
-  handleSubmit() {
-    const checkout_info = this.checkout_info;
-    this.api.post('/orders', {
-      checkout_info
-    });
+  filterByCategory(category: Category) {
+    // category.filterActive = !category.filterActive;
+    // if (!category.filterActive) {
+    //   const categoryFilter:string = category.category;
+    //   this.products = this.products.filter((product:Product) => product.product_category === categoryFilter);
+    // }
   }
 }

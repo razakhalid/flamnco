@@ -1,19 +1,30 @@
 <div class="shop-page">
+
   <div class="categories-menu">
     <h2 class="font-bold text-center">Shop by Category</h2>
-    <div class="grid">
-      <div *ngFor="let category of categories" class="item">
+    <div class="grid mt-md">
+      <div
+        *ngFor="let category of categories"
+        class="item"
+        (click)="filterByCategory(category)"
+      >
         <img [src]="category.imgUrl" [alt]="category.label">
         <p class="font-bold mt-xxs">{{ category.label }}</p>
       </div>
     </div>
   </div>
 
-  <section class="grid">
-    <div class="item" *ngFor="let product of products">
-      <img src="../../../assets/electric-guitar.jpeg" alt="">
-      <p class="font-bold mt-xxs">{{ product.product_name }}</p>
-      <p class="text-highlight mt-xxs">{{ product.product_price }}</p>
+  <section>
+    <div class="grid mt-md">
+      <div
+        class="item"
+        *ngFor="let product of products"
+      >
+        <img src="../../../assets/electric-guitar.jpeg" alt="">
+        <p class="font-bold mt-xxs">{{ product.product_name }}</p>
+        <p class="font-light mt-xxs">{{ product.product_manufacturer }}</p>
+        <p class="text-highlight mt-xxs">{{ product.product_price }}</p>
+      </div>
     </div>
   </section>
 

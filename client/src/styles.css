@@ -1,4 +1,4 @@
-/* Reset */
+/* RESET */
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -25,7 +25,7 @@ img {
 }
 
 :root {
-  --gap-xxs: 0.75rem;
+  --gap-xxs: 0.5rem;
   --gap-xs: 1rem;
   --gap-sm: 2rem;
   --gap-md: 4rem;
@@ -41,8 +41,8 @@ h1, h2, h3, h4, h5, h6, p {
 .grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: var(--gap-md);
-  margin-top: var(--gap-md);
+  column-gap: var(--gap-xs);
+  row-gap: var(--gap-md);
 }
 
 .grid .item {
@@ -55,20 +55,18 @@ h1, h2, h3, h4, h5, h6, p {
 
 .text-center { text-align: center; }
 
+.font-light { font-weight: lighter; }
 .font-bold { font-weight: bold; }
 
-.mt-xxs {
-  margin-top: var(--gap-xxs);
-}
+.mt-xxs { margin-top: var(--gap-xxs); }
+.mt-md { margin-top: var(--gap-md); }
 
-.grid .item .text-highlight {
-  color: var(--color-text-highlight);
-}
+/* COLOR */
+.text-highlight { color: var(--color-text-highlight); }
 
 @media(min-width: 500px) {
   .grid {
     grid-template-columns: repeat(3, 1fr);
-    gap: var(--gap-sm);
   }
 }
 
