@@ -1,5 +1,5 @@
 .price {
-    color: red;
+    color: var(--color-text-highlight);
 }
 
 img {
