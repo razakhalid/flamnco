@@ -1,0 +1,16 @@
+.inner {
+  margin: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - (2 * var(--gap-sm)));
+}
+@media (min-width: 1300px) {
+  .inner { width: 1200px; }
+}
+.inner .logo {
+  max-width: 150px;
+}
+.logo img {
+  width: 100%;
+  object-fit: cover;
+}

@@ -1,1 +1,80 @@
-/* You can add global styles to this file, and also import other style files */
+/* RESET */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+:root {
+  --gap-xxs: 0.5rem;
+  --gap-xs: 1rem;
+  --gap-sm: 2rem;
+  --gap-md: 4rem;
+  --color-text-dark-gray: rgb(78, 71, 86);
+  --color-text-highlight: red;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  color: var(--color-text-dark-gray);
+}
+
+/* LAYOUT */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: var(--gap-xs);
+  row-gap: var(--gap-md);
+}
+
+.grid .item {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.text-center { text-align: center; }
+
+.font-light { font-weight: lighter; }
+.font-bold { font-weight: bold; }
+
+.mt-xxs { margin-top: var(--gap-xxs); }
+.mt-md { margin-top: var(--gap-md); }
+
+/* COLOR */
+.text-highlight { color: var(--color-text-highlight); }
+
+@media(min-width: 500px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+img {
+  max-width: 150px;
+  max-height: 150px;
+}
+
+@media(min-width: 800px) {
+  .grid { grid-template-columns: repeat(4, 1fr); }
+}
