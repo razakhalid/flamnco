@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './product.component.css'
 })
 export class ProductComponent {
-
+  addToCart(): void {
+    console.log("Button Works");
+  }
 }
