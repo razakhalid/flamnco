@@ -3,17 +3,20 @@ import {FormsModule} from "@angular/forms";
 import {NgFor} from "@angular/common";
 import {Category, Product} from "../../types";
 import {ProductService} from "../../services/product.service";
+import {LoadingAnimationComponent} from "../../components/loading-animation/loading-animation.component";
+import {LoadingAnimationService} from "../../services/loading-animation.service";
 
 @Component({
   selector: 'app-shop',
   standalone: true,
-  imports: [FormsModule, NgFor],
+  imports: [FormsModule, NgFor, LoadingAnimationComponent],
   templateUrl: './shop-page.component.html',
   styleUrl: './shop-page.component.css'
 })
 export class ShopPageComponent {
   productService:ProductService = inject(ProductService);
   products: any = [];
+  loadingAnimationService: LoadingAnimationService = inject(LoadingAnimationService);
   categories: Array<Category> = [
     { label: "Electric Guitars", category: "Electric Guitar", imgUrl: "../../assets/electric-guitar.jpeg", filterActive: false },
     { label: "Acoustic Guitars", category: "Acoustic Guitar", imgUrl: "../../assets/acoustic-guitar.jpeg", filterActive: false },
@@ -36,8 +39,10 @@ export class ShopPageComponent {
     this.getAllProducts();
   }
   async getAllProducts() {
+    this.loadingAnimationService.startLoading();
     this.products = await this.productService.getProducts();
-    console.log(this.products);
+    this.loadingAnimationService.stopLoading();
+    // console.log(this.products);
   }
   filterByCategory(category: Category) {
     // category.filterActive = !category.filterActive;

@@ -12,7 +12,7 @@ export class ProductService {
       const url: string = this.baseUrl + '/products';
       const data = await fetch(url);
       this.products = data && await data.json();
-      console.log(this.products);
+      // console.log(this.products);
       return this.products;
     } catch (err) {
       console.error(err);
