@@ -51,4 +51,7 @@ export class ShopPageComponent {
     //   this.products = this.products.filter((product:Product) => product.product_category === categoryFilter);
     // }
   }
+  openProduct(product_id: string): void {
+    console.log(product_id);
+  }
 }

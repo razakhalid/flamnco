@@ -3,6 +3,7 @@ import { ShopPageComponent } from "./pages/shop/shop-page.component";
 import { ProductComponent } from './pages/product/product.component';
 
 export const routes: Routes = [
-  { path: '', component: ShopPageComponent },
-  { path: 'product', component: ProductComponent }
+  { path: 'shop', component: ShopPageComponent },
+  { path: 'product', component: ProductComponent },
+  { path: '', redirectTo: 'shop', pathMatch: 'full' }
 ];

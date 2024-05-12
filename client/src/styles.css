@@ -31,6 +31,7 @@ img {
   --gap-md: 4rem;
   --color-text-dark-gray: rgb(78, 71, 86);
   --color-text-highlight: red;
+  --border-hover: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -51,6 +52,8 @@ h1, h2, h3, h4, h5, h6, p {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding: var(--gap-sm) var(--gap-xs);
+  border-radius: 10px;
 }
 
 .text-center { text-align: center; }
@@ -63,6 +66,8 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* COLOR */
 .text-highlight { color: var(--color-text-highlight); }
+
+.clickable:hover { cursor: pointer; border: var(--border-hover); }
 
 @media(min-width: 500px) {
   .grid {
