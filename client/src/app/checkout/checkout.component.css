@@ -1,0 +1,26 @@
+.checkoutbody {
+    display: flex;
+    /* Use flexbox to arrange items */
+    background-color: rgb(249, 251, 239);
+    padding: 20px;
+    width: 1700px;
+    height: 800pxgit;
+    /* Set height to auto */
+    margin: 15px 15px 5px 5px;
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.threeInput {
+    flex: 1;
+    /* Let it grow as much as possible */
+}
+
+.picture {
+    flex: 1;
+    /* Let it grow as much as possible */
+    margin-left: auto;
+    /* Push it to the right */
+    margin-bottom: 100px;
+}
+
