@@ -1,13 +1,27 @@
 <div class = "product-page" >
     <div class = "product">
-        <div class = "product-image" style = "width: 50%; float: left">
+        <div class = "product-image">
             <img src = "https://media.guitarcenter.com/is/image/MMGS7/M07990000002000-02-600x600.jpg">
         </div>
-        <div class = "product-info" style = "margin-left: 50%">
-            <h3 class = "font-bold text-center">Gleaming Burst Electric Guitar</h3>
-            <div class = "price">
-                <p>$3876.99</p>
+        <div class = "product-info" >
+            <h3 class = "font-bold text-center"> Gleaming Burst Electric Guitar </h3>
+            <div class = "price" style = "float: left"> $3876.99 </div>
+            <button onclick="addToCart()" style = "float: right">Add to Cart</button>
+            <div class = "product-desc mt-md">
+                <li><strong>Brand: </strong>Harmony Forge Guitars</li>
+                <li><strong>Body type: </strong>Double cutaway semihollow</li>
+                <li><strong>Number of strings: </strong>6</li>
+                <li><strong>Wood: </strong>Laminated Maple</li>
+                <li><strong>Neck shape: </strong>C</li>
+                <li><strong>Fret size: </strong>Medium-Jumbo</li>
+                <li><strong>Number of frets: </strong>22</li>
             </div>
         </div>
     </div>
 </div>
+
+<script>
+    function addToCart() {
+        console.log("Button Works");
+    }
+</script>
