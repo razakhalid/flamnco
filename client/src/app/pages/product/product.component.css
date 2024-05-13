@@ -1,3 +1,11 @@
+.product {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.product-image {
+  display: flex;
+  justify-content: center;
+}
 .price {
     color: var(--color-text-highlight);
 }

@@ -19,4 +19,9 @@ export class ProductService {
       return err;
     }
   }
+  async findById(id: string) {
+    if (!this.products.length) await this.getProducts();
+    console.log(this.products);
+    return this.products.find(product => product.product_id === id);
+  }
 }

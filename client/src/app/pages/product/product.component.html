@@ -1,13 +1,13 @@
-<div class = "product-page" >
-    <div class = "product">
-        <div class = "product-image" style = "width: 50%; float: left">
-            <img src = "https://media.guitarcenter.com/is/image/MMGS7/M07990000002000-02-600x600.jpg">
-        </div>
-        <div class = "product-info" style = "margin-left: 50%">
-            <h3 class = "font-bold text-center">Gleaming Burst Electric Guitar</h3>
-            <div class = "price">
-                <p>$3876.99</p>
-            </div>
-        </div>
+<div class="product-page">
+  <div class="product mt-md">
+      <div class="flex justify-center align-center">
+          <img [src]="product && product.product_img_url" [alt]="product && product.product_name"/>
+      </div>
+    <div class="flex justify-center align-center direction-column text-center">
+      <h1 class="font-bold">{{ product && product.product_name }}</h1>
+      <h2 class="text-highlight mt-xs">${{ product && product.product_price }}</h2>
+      <p class="mt-xs">{{ product && product.product_manufacturer }}</p>
+      <p class="mt-xs">{{ product && product.product_description }}</p>
     </div>
+  </div>
 </div>

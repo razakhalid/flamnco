@@ -5,11 +5,12 @@ import {Category, Product} from "../../types";
 import {ProductService} from "../../services/product.service";
 import {LoadingAnimationComponent} from "../../components/loading-animation/loading-animation.component";
 import {LoadingAnimationService} from "../../services/loading-animation.service";
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'app-shop',
   standalone: true,
-  imports: [FormsModule, NgFor, LoadingAnimationComponent],
+  imports: [FormsModule, NgFor, LoadingAnimationComponent, RouterLink],
   templateUrl: './shop-page.component.html',
   styleUrl: './shop-page.component.css'
 })
@@ -50,8 +51,5 @@ export class ShopPageComponent {
     //   const categoryFilter:string = category.category;
     //   this.products = this.products.filter((product:Product) => product.product_category === categoryFilter);
     // }
-  }
-  openProduct(product_id: string): void {
-    console.log(product_id);
   }
 }

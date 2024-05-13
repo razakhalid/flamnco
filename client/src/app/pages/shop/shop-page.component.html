@@ -18,7 +18,7 @@
       <div
         class="item clickable"
         *ngFor="let product of products"
-        (click)="openProduct(product.product_id)"
+        [routerLink]="['/product', product.product_id]"
       >
         <img src="../../../assets/electric-guitar.jpeg" alt="">
         <p class="font-bold mt-xxs">{{ product.product_name }}</p>
