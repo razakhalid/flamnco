@@ -9,7 +9,7 @@
             </ng-template>
             <table>
                 <tr *ngFor="let prod of products">
-                    <td><img src = {{prod.product_image_url}} ></td>
+                    <td><img [src]=prod.product_img_url ></td>
                     <td><strong>{{prod.product_name}}</strong></td>
                     <td><strong>{{prod.product_price}}</strong></td>
                 </tr>
