@@ -56,12 +56,18 @@ h1, h2, h3, h4, h5, h6, p {
   border-radius: 10px;
 }
 
+.flex { display: flex; }
+.justify-center { justify-content: center; }
+.align-center { align-items: center; }
+.direction-column { flex-direction: column; }
+
 .text-center { text-align: center; }
 
 .font-light { font-weight: lighter; }
 .font-bold { font-weight: bold; }
 
 .mt-xxs { margin-top: var(--gap-xxs); }
+.mt-xs { margin-top: var(--gap-xs); }
 .mt-md { margin-top: var(--gap-md); }
 
 /* COLOR */

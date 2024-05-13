@@ -31,6 +31,7 @@ CREATE TABLE "product" (
     "product_price" numeric(10,2)   NOT NULL,
     "product_category" varchar(25)   NOT NULL,
     "product_img_url" varchar(200)   NOT NULL,
+    "product_description" varchar(500)   NOT NULL,
     CONSTRAINT "pk_product" PRIMARY KEY (
         "product_id"
      )

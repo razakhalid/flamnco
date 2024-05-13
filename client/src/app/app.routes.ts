@@ -5,7 +5,7 @@ import { CartComponent } from './pages/cart/cart.component';
 
 export const routes: Routes = [
   { path: 'shop', component: ShopPageComponent },
-  { path: 'product', component: ProductComponent },
-  { path: '', redirectTo: 'shop', pathMatch: 'full' },
-  { path: 'cart', component: CartComponent }
+  { path: 'product/:product_id', component: ProductComponent },
+  { path: 'cart', component: CartComponent },
+  { path: '', redirectTo: 'shop', pathMatch: 'full' }
 ];
