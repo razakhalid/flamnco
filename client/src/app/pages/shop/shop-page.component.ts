@@ -1,7 +1,7 @@
 import {Component, isDevMode, inject} from '@angular/core';
 import {FormsModule} from "@angular/forms";
 import {NgFor} from "@angular/common";
-import {Category, Product} from "../../types";
+import {Product} from "../../types";
 import {ProductService} from "../../services/product.service";
 import {LoadingAnimationComponent} from "../../components/loading-animation/loading-animation.component";
 import {LoadingAnimationService} from "../../services/loading-animation.service";
@@ -18,12 +18,6 @@ export class ShopPageComponent {
   productService:ProductService = inject(ProductService);
   products: any = [];
   loadingAnimationService: LoadingAnimationService = inject(LoadingAnimationService);
-  categories: Array<Category> = [
-    { label: "Electric Guitars", category: "Electric Guitar", imgUrl: "../../assets/electric-guitar.jpeg", filterActive: false },
-    { label: "Acoustic Guitars", category: "Acoustic Guitar", imgUrl: "../../assets/acoustic-guitar.jpeg", filterActive: false },
-    { label: "Classical & Flamenco Guitars", category: "Classical Guitar", imgUrl: "../../assets/classical-guitar.jpeg", filterActive: false },
-    { label: "Bass Guitars", category: "Bass Guitar", imgUrl: "../../assets/bass-guitar.jpeg", filterActive: false }
-  ];
   checkout_info:any = {
     customer_name: "Raza Khalid",
     customer_phone: "(123) 123-1234",
@@ -45,11 +39,5 @@ export class ShopPageComponent {
     this.loadingAnimationService.stopLoading();
     // console.log(this.products);
   }
-  filterByCategory(category: Category) {
-    // category.filterActive = !category.filterActive;
-    // if (!category.filterActive) {
-    //   const categoryFilter:string = category.category;
-    //   this.products = this.products.filter((product:Product) => product.product_category === categoryFilter);
-    // }
-  }
+  filterProducts = this.productService.filterProducts
 }

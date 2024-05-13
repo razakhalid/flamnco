@@ -34,8 +34,9 @@ img {
   --border-hover: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p, a {
   color: var(--color-text-dark-gray);
+  text-decoration: none;
 }
 
 /* LAYOUT */
@@ -73,15 +74,14 @@ h1, h2, h3, h4, h5, h6, p {
 /* COLOR */
 .text-highlight { color: var(--color-text-highlight); }
 
-.clickable:hover { cursor: pointer; border: var(--border-hover); }
+.clickable:not(a):hover { cursor: pointer; border: var(--border-hover); }
+a:hover { cursor: pointer; text-decoration: underline; }
 
 @media(min-width: 500px) {
   .grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
-
 
 @media(min-width: 800px) {
   .grid { grid-template-columns: repeat(4, 1fr); }

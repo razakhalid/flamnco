@@ -1,0 +1,21 @@
+.container{
+  display: flex;
+  background: rgb(249, 251, 239);
+  padding:  30px;
+  margin-top: 6%;
+  margin-left: 6%;
+  margin-right: 6%;
+  border: 1px solid black;
+}
+
+.contactinfo{
+  flex: 1;
+  padding: 30px;
+}
+.map{
+  flex: 1;
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
