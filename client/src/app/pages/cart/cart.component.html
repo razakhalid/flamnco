@@ -5,15 +5,14 @@
             <div *ngIf="products === undefined || products.length == 0; then thenBlock else elseBlock"></div>
             <ng-template #thenBlock><strong>Your cart is empty.</strong></ng-template>
             <ng-template #elseBlock>
-                <p>test</p>
-            </ng-template>
-            <table>
+              <table>
                 <tr *ngFor="let prod of products">
-                    <td><img [src]=prod.product_img_url ></td>
-                    <td><strong>{{prod.product_name}}</strong></td>
-                    <td><strong>{{prod.product_price}}</strong></td>
+                  <td><img [src]=prod.product_img_url ></td>
+                  <td><strong>{{prod.product_name}}</strong></td>
+                  <td><strong>{{prod.product_price}}</strong></td>
                 </tr>
-            </table>
+              </table>
+            </ng-template>
         </div>
     </div>
 </div>
