@@ -22,4 +22,7 @@ export class ProductComponent {
     this.product = await this.productService.findById(productIdFromRoute);
     console.log(this.product);
   }
+  addToCart(): void {
+    console.log("Button Works");
+  }
 }
