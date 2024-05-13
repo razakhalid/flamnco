@@ -1,14 +1,17 @@
 import { Component } from '@angular/core';
 import { Product } from '../../types';
+import { NgFor, NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-cart',
   standalone: true,
-  imports: [],
+  imports: [NgFor, NgIf],
   templateUrl: './cart.component.html',
   styleUrl: './cart.component.css'
 })
 export class CartComponent {
+  emptyArray: Array<Product> | undefined = []; /* for testing purposes - DELETE LATER */ 
+
   products: Array<Product> | undefined = [
     {
       product_id: "EG-5E6F7G8H", product_name: "Midnight Sparkle Electric Guitar", product_manufacturer: "NovaSound Guitar Co.",
@@ -21,4 +24,6 @@ export class CartComponent {
       product_img_url: "https://media.guitarcenter.com/is/image/MMGS7/J22561000001000-02-600x600.jpg"
     }
   ]
+  
+  
 }
