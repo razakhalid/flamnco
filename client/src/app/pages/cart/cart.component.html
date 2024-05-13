@@ -1,0 +1,19 @@
+<div class = "cart-page">
+    <h2 class = "font-bold">Cart</h2>
+    <div class = "cart-info">
+        <div class = "cart">
+            <div *ngIf="products === undefined || products.length == 0; then thenBlock else elseBlock"></div>
+            <ng-template #thenBlock><strong>Your cart is empty.</strong></ng-template>
+            <ng-template #elseBlock>
+                <p>test</p>
+            </ng-template>
+            <table>
+                <tr *ngFor="let prod of products">
+                    <td><img src = {{prod.product_image_url}} ></td>
+                    <td><strong>{{prod.product_name}}</strong></td>
+                    <td><strong>{{prod.product_price}}</strong></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
