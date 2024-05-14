@@ -14,9 +14,8 @@ export class ProductService {
       const url: string = this.baseUrl + '/products';
       const data = await fetch(url);
       this.products = data && await data.json();
-      this.filteredProducts = this.products
       // console.log(this.products);
-      return this.filteredProducts;
+      return this.products;
     } catch (err) {
       console.error(err);
       return err;
@@ -29,6 +28,9 @@ export class ProductService {
   }
   filterProducts(filter: string) {
     this.activeFilter = filter;
+    console.log(filter)
     this.filteredProducts = this.products.filter(product => product.product_category.toLowerCase() === filter.toLowerCase());
+    console.log(this.products.find(product => product.product_name === "Majestic Melody Classical Guitar"));
+    return this.filteredProducts;
   }
 }

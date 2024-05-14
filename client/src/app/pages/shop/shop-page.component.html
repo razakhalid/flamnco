@@ -2,17 +2,19 @@
   <div class="categories-menu">
     <h2 class="font-bold text-center">Shop by Category</h2>
     <div class="grid mt-md">
-      <button class="item" (click)="filterProducts('Electric Guitar')">Electric Guitars</button>
-      <button class="item" (click)="filterProducts('Acoustic Guitar')">Acoustic Guitars</button>
-      <button class="item" (click)="filterProducts('Classical Guitar')">Classical & Flamenco Guitars</button>
-      <button class="item" (click)="filterProducts('Electric Guitar')">Bass Guitars</button>
+      <button
+        class="border bg-white rounded clickable bg-hover py-xxs"
+        [ngClass]="{ 'active' : filter.name === productService.activeFilter }"
+        *ngFor="let filter of filters"
+        (click)="filterProducts(filter.name)">{{ filter.label }}
+      </button>
     </div>
   </div>
 
   <section>
     <div class="grid mt-md">
       <div
-        class="item clickable"
+        class="item clickable border-hover"
         *ngFor="let product of products"
         [routerLink]="['/product', product.product_id]"
       >

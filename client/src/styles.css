@@ -29,12 +29,18 @@ img {
   --gap-xs: 1rem;
   --gap-sm: 2rem;
   --gap-md: 4rem;
+  --color-white: white;
+  --color-light-gray: rgb(238, 238, 238);
+  --color-gray: rgb(192, 192, 192);
   --color-text-dark-gray: rgb(78, 71, 86);
   --color-text-highlight: red;
+  --border-radius-sm: 5px;
+  --border-radius: 10px;
   --border-hover: 1px solid rgba(0, 0, 0, 0.1);
+  --bg-hover: rgba(0, 0, 0, 0.1);
 }
 
-h1, h2, h3, h4, h5, h6, p, a {
+h1, h2, h3, h4, h5, h6, p, a, button {
   color: var(--color-text-dark-gray);
   text-decoration: none;
 }
@@ -64,18 +70,30 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 .text-center { text-align: center; }
 
-.font-light { font-weight: lighter; }
-.font-bold { font-weight: bold; }
-
 .mt-xxs { margin-top: var(--gap-xxs); }
 .mt-xs { margin-top: var(--gap-xs); }
 .mt-md { margin-top: var(--gap-md); }
 
+.py-xxs { padding-top: var(--gap-xxs); padding-bottom: var(--gap-xxs); }
+
+/* FONT */
+.font-light { font-weight: lighter; }
+.font-bold { font-weight: bold; }
+
 /* COLOR */
+.bg-white { background-color: var(--color-white); }
 .text-highlight { color: var(--color-text-highlight); }
 
-.clickable:not(a):hover { cursor: pointer; border: var(--border-hover); }
+/* BORDER */
+.border { border: 0.5px solid var(--color-gray); }
+.rounded { border-radius: var(--border-radius); }
+
+/* STATE */
+.clickable:not(a):hover { cursor: pointer; }
+.border-hover:hover { border: var(--border-hover); }
+.bg-hover:hover { background-color: var(--bg-hover); }
 a:hover { cursor: pointer; text-decoration: underline; }
+button.active { background-color: var(--color-light-gray); }
 
 @media(min-width: 500px) {
   .grid {

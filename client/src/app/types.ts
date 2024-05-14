@@ -8,3 +8,8 @@ export interface Product {
   "product_img_url": string,
   "product_description": string
 }
+
+export interface Filter {
+  "name": string,
+  "label": string,
+}
