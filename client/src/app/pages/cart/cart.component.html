@@ -1,12 +1,12 @@
-<div class = "cart-page">
-    <h2 class = "font-bold">Shopping Cart</h2><br>
-    <div class = "cart-info">
-        <div class = "cart">
+<div class="cart-page">
+    <h2 class="font-bold">Your Cart</h2>
+    <div class="cart-info">
+        <div class="cart">
             <div *ngIf="products === undefined || products.length == 0; then thenBlock else elseBlock"></div>
             <ng-template #thenBlock> <!-- works! -->
                 <strong>Your shopping cart is empty.</strong><br>
                 Time to find some great guitars to play!
-            </ng-template> 
+            </ng-template>
             <ng-template #elseBlock>
                 <table>
                     <tr *ngFor="let prod of products">
@@ -19,17 +19,17 @@
                     </tr>
                 </table>
                 <br><br>
-                <div class = "your-total" style = "float: left">
+                <div class="your-total" style="float: left">
                     Your Total:
                 </div>
-                <div class = "total" style = "float: right">
+                <div class="total" style="float: right">
                     ${{TOTAL}}
                 </div>
                 <br>
-                <div class = "checkoutButton" style = "float:right">
-                    <button (click)="checkOut()" style = "float: right">CHECK OUT</button>
+                <div class="checkoutButton" style="float:right">
+                    <button (click)="checkOut()" style="float: right">CHECK OUT</button>
                 </div>
-                
+
             </ng-template>
         </div>
     </div>

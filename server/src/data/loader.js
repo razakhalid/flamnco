@@ -5,14 +5,14 @@ const csvParser = require("csv-parser");
 const dataInJSON = [];
 
 function convertToJSON(csvFilePath, jsonFilePath) {
-    fs.createReadStream(pathToCsvFile)
+    fs.createReadStream(csvFilePath)
         .pipe(csvParser())
         .on("data", (data) => {
             dataInJSON.push(data);
         })
         .on("end", () => {
             console.log("CSV parsing complete, writing to JSON...");
-            fs.writeFile(pathToOrdersJsonFile, JSON.stringify(dataInJSON), (err, results) => {
+            fs.writeFile(jsonFilePath, JSON.stringify(dataInJSON), (err, results) => {
                if (err) {
                    console.error(err);
                }
@@ -23,11 +23,12 @@ function convertToJSON(csvFilePath, jsonFilePath) {
 
 const pathToCsvFile = path.join(__dirname, "orders.csv");
 const pathToOrdersJsonFile = path.join(__dirname, "orders.json");
+const pathToInventoryCsvFile = path.join(__dirname, "inventory.csv");
 const pathToInventoryJsonFile = path.join(__dirname, "inventory.json");
 const pathToQueriesFile = path.join(__dirname, "queries.txt");
 const pathToSchemaFile = path.join(__dirname, "schema.json");
 
-convertToJSON("./orders.json", "./orders.json");
+// convertToJSON(pathToInventoryCsvFile, pathToInventoryJsonFile);
 
 
 function generateQueries(schemaFilePath, dataFilePath, entity, queriesFilePath) {
@@ -67,9 +68,9 @@ function generateQueries(schemaFilePath, dataFilePath, entity, queriesFilePath) 
     });
 }
 
-// generateQueries(pathToSchemaFile, pathToInventoryJsonFile, "product", pathToQueriesFile);
+generateQueries(pathToSchemaFile, pathToInventoryJsonFile, "product", pathToQueriesFile);
 // generateQueries(pathToSchemaFile, pathToOrdersJsonFile, "delivery_address", pathToQueriesFile);
 // generateQueries(pathToSchemaFile, pathToOrdersJsonFile, "customer", pathToQueriesFile);
-generateQueries(pathToSchemaFile, pathToOrdersJsonFile, "ordertbl", pathToQueriesFile);
+// generateQueries(pathToSchemaFile, pathToOrdersJsonFile, "ordertbl", pathToQueriesFile);
 
 // generateQueriesFromSchema(pathToSchemaFile, pathToJsonFile, pathToQueriesFile);

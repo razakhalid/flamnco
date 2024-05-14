@@ -5,12 +5,11 @@ export interface Product {
   "product_qty_remaining": number,
   "product_price": number,
   "product_category": string,
-  "product_img_url": string
+  "product_img_url": string,
+  "product_description": string
 }
 
-export interface Category {
-  label: string,
-  category: string,
-  imgUrl: string
-  filterActive: boolean
+export interface Filter {
+  "name": string,
+  "label": string,
 }

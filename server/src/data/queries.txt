@@ -1,700 +1,187 @@
-/*
-------------------------------------------------------------------------------------------------------------------------
-PRODUCT
-------------------------------------------------------------------------------------------------------------------------
-*/
 
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'EG-1A2B3C4D','Gleaming Burst Electric Guitar','Harmony Forge Guitars',17,3876.99,'Electric Guitar','https://www.guitarcenter.com/Fender/Tom-DeLonge-Starcaster-Electric-Guitar-Satin-Olympic-White-1500000416620.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'EG-5E6F7G8H','Midnight Sparkle Electric Guitar','NovaSound Guitar Co.',3,249.99,'Electric Guitar','https://www.guitarcenter.com/Gibson/Les-Paul-Traditional-Pro-V-Flame-Top-Electric-Guitar-Transparent-Ebony-Burst-1500000373398.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'EG-9I0J1K2L','Sonic Fury Electric Guitar','Crestwood Instruments',0,1799.99,'Electric Guitar','https://www.guitarcenter.com/Schecter-Guitar-Research/C-1-Platinum-Electric-Guitar-Satin-Transparent-Midnight-Blue-1500000239535.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'EG-N2O3P4Q5R','Vintage Velvet Electric Guitar','EchoCraft Guitar Works',29,423.99,'Electric Guitar','https://www.guitarcenter.com/Fender/Player-Series-Telecaster-Maple-Fingerboard-Limited-Edition-Electric-Guitar-Surf-Pearl-1500000288960.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'EG-6S7T8U9V','Cosmic Horizon Electric Guitar','Solstice Sound Instruments',8,5999.99,'Electric Guitar','https://www.guitarcenter.com/Epiphone/Dave-Grohl-DG-335-Semi-Hollow-Electric-Guitar-Pelham-Blue-1500000409445.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'EG-BBCDD1E2','Twilight Shimmer Electric Guitar','Crescent City Guitars',11,932.99,'Electric Guitar','https://www.guitarcenter.com/Fender/Player-Stratocaster-HSS-Plus-Top-Maple-Fingerboard-Limited-Edition-Electric-Guitar-Sienna-Sunburst-1500000293775.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'EG-3FG4HI5JJ','Radiant Eclipse Electric Guitar','Phoenix Tone Labs',22,2675.99,'Electric Guitar','https://www.guitarcenter.com/Epiphone/Les-Paul-Standard-60s-Quilt-Top-Limited-Edition-Electric-Guitar-Translucent-Blue-1500000330644.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'EG-6K7LM8N9O','Thunderbolt Thrust Electric Guitar','Horizon Heights Luthiers',5,542.99,'Electric Guitar','https://www.guitarcenter.com/PRS/Custom-24-08-with-Pattern-Thin-Neck-Electric-Guitar-Eriza-Verde-1500000341192.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'EG-PPQQRRSST','Mystic Mirage Electric Guitar','Eclipse Electric Co.',1,149.99,'Electric Guitar','https://www.guitarcenter.com/Jackson/American-Series-Soloist-SL2MG-Electric-Guitar-Matte-Army-Drab-1500000415547.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'EG-0UV1WW2XX','Neon Blaze Electric Guitar','Radiant Resonance Guitars',28,289.99,'Electric Guitar','https://www.guitarcenter.com/Gibson/Slash-Jessica-Les-Paul-Standard-Electric-Guitar-Honey-Burst-1500000419382.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'EG-YY3ZZ4AB','Inferno Ignition Electric Guitar','Zenith String Instruments',4,756.99,'Electric Guitar','https://www.guitarcenter.com/Gretsch-Guitars/G5427TG-Electromatic-Hollowbody-Single-Cut-with-Bigsby-Limited-Edition-Electric-Guitar-Midnight-Sapphire-1500000350451.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'EG-6C7C8D9E0','Shadow Dusk Electric Guitar','Evergreen Guitar Works',0,492.99,'Electric Guitar','https://www.guitarcenter.com/Jackson/American-Series-Soloist-SL2MG-HT-Electric-Guitar-Satin-Black-1500000415560.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'EG-F1F2G3G4H','Sapphire Serenade Electric Guitar','Aria Artisan Guitars',19,229.99,'Electric Guitar','https://www.guitarcenter.com/Epiphone/1963-Firebird-I-Electric-Guitar-Inverness-Green-1500000404878.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'EG-5I6J7J8K9L','Ember Ember Electric Guitar','Rivertone Guitar Company',9,1598.99,'Electric Guitar','https://www.guitarcenter.com/Gretsch-Guitars/Electromatic-Chris-Rocha-Broadkaster-Jr-Center-Block-Electric-Guitar-Vintage-White-1500000415667.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'EG-0M1M2N3N4O','Lunar Luster Electric Guitar','Celestial Soundcraft',27,399.99,'Electric Guitar','https://www.guitarcenter.com/Fender/Limited-Edition-American-Ultra-Stratocaster-Electric-Guitar-Tigers-Eye-1500000405688.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'EG-5PP6QQ7RR','Starlight Symphony Electric Guitar','NovaSound Guitar Co.',6,1935.99,'Electric Guitar','https://www.guitarcenter.com/Gibson/Les-Paul-Standard-50s-Quilt-Limited-Edition-Electric-Guitar-Bourbon-Burst-1500000398861.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'EG-8S9TT0UUV','Golden Sunburst Electric Guitar','Crestwood Instruments',2,867.99,'Electric Guitar','https://www.guitarcenter.com/Gibson/Les-Paul-Standard-60s-Quilt-Limited-Edition-Electric-Guitar-Dark-Purple-Burst-1500000398862.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'EG-1WW2XX3YY','Silent Night Electric Guitar','Phoenix Tone Labs',14,3210.99,'Electric Guitar','https://www.guitarcenter.com/Fender/Player-Stratocaster-HSS-Pau-Ferro-Fingerboard-Limited-Edition-Electric-Guitar-Candy-Red-Burst-1500000257000.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'EG-4ZZ5A6BB7C','Ruby Rhapsody Electric Guitar','NovaTone Guitars',25,576.99,'Electric Guitar','https://media.guitarcenter.com/is/image/MMGS7/Player-Stratocaster-Maple-Fingerboard-Limited-Edition-Electric-Guitar-Black/L46833000001000-00-264x264.jpg'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'EG-8DD9EEE0F','Aurora Borealis Electric Guitar','Phoenix Tone Labs',10,489.99,'Electric Guitar','https://www.guitarcenter.com/Fender/Player-Stratocaster-Roasted-Maple-Fingerboard-Limited-Edition-Electric-Guitar-Surf-Green-1500000389590.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'EG-1G2HH3II4J','Crimson Cascade Electric Guitar','NovaSound Guitar Co.',0,1054.99,'Electric Guitar','https://www.guitarcenter.com/Fender/American-Vintage-II-1951-Telecaster-Electric-Guitar-Butterscotch-Blonde-1500000377711.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'EG-5K6LL7MM8N','Ocean Wave Electric Guitar','Crestwood Instruments',7,2649.99,'Electric Guitar','https://media.guitarcenter.com/is/image/MMGS7/G5427T-Electromatic-Limited-Edition-Electric-Guitar-Black-Pearl-Metallic/L88519000001000-00-264x264.jpg'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'EG-9OO0PP1QQ','Jade Jive Electric Guitar','Phoenix Tone Labs',26,799.99,'Electric Guitar','https://media.guitarcenter.com/is/image/MMGS7/G5427TG-Electromatic-Hollowbody-Single-Cut-Bigsby-Limited-Edition-Electric-Guitar-Champagne-White-Gold/M03605000001001-00-264x264.jpg'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'EG-1G2HH3IK4R','Platinum Pulse Electric Guitar','NovaTone Guitars',20,444.99,'Electric Guitar','https://media.guitarcenter.com/is/image/MMGS7/American-Ultra-Stratocaster-HSS-Maple-Fingerboard-Electric-Guitar-Arctic-Pearl/L69975000005000-00-264x264.jpg'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'AG-1A2B3C4D','Sunburst Serenade Acoustic Guitar','Phoenix Tone Labs',7,1265.73,'Acoustic Guitar','https://www.guitarcenter.com/Martin/GPC-10E-Road-Series-Limited-Edition-All-Sapele-Grand-Performance-Acoustic-Electric-Guitar-Dark-Mahogany-1500000424421.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'AG-5E6F7G8H','Whispering Woods Acoustic Guitar','NovaSound Guitar Co.',18,189.48,'Acoustic Guitar','https://www.guitarcenter.com/Taylor/814ce-Builders-Edition-50th-Anniversary-Limited-Edition-Grand-Auditorium-Acoustic-Electric-Guitar-Kona-Edgeburst-1500000418777.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'AG-9I0J1K2L','Midnight Melody Acoustic Guitar','Crestwood Instruments',0,3978.21,'Acoustic Guitar','https://www.guitarcenter.com/Martin/D-18-Standard-Dreadnought-Acoustic-Guitar-Natural-1334587637384.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'AG-N2O3P4Q5R','Ocean Breeze Acoustic Guitar','Arizona Guitars',12,5932.14,'Acoustic Guitar','https://www.guitarcenter.com/Martin/D-35-Standard-Dreadnought-Acoustic-Guitar-Ambertone-1500000201325.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'AG-6S7T8U9V','Ember Glow Acoustic Guitar','NovaTone Guitars',4,475.89,'Acoustic Guitar','https://www.guitarcenter.com/Gibson/Hummingbird-Faded-Acoustic-Electric-Guitar-Natural-1500000384179.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'AG-BBCDD1E2','Cedar Creek Acoustic Guitar','Phoenix Tone Labs',20,209.36,'Acoustic Guitar',''
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'AG-3FG4HI5JJ','Autumn Haze Acoustic Guitar','Harmony Forge Guitars',5,321.57,'Acoustic Guitar','https://www.guitarcenter.com/Gibson/J-45-Standard-Acoustic-Electric-Guitar-Cherry-1500000348322.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'AG-6K7LM8N9O','Whispering Willow Acoustic Guitar','NovaSound Guitar Co.',0,104.62,'Acoustic Guitar','https://www.guitarcenter.com/Taylor/Builders-Edition-K24ce-V-Class-Grand-Auditorium-Acoustic-Electric-Guitar-Kona-Burst-1500000299521.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'AG-PPQQRRSST','Maple Mist Acoustic Guitar','Crestwood Instruments',9,486.75,'Acoustic Guitar','https://www.guitarcenter.com/Lava/Blue-Lava-Touch-Acoustic-Electric-Guitar-With-Airflow-Bag-Aqua-Mint-Green-1500000383218.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'AG-0UV1WW2XX','Vintage Vine Acoustic Guitar','EchoCraft Guitar Works',16,220.91,'Acoustic Guitar','https://www.guitarcenter.com/LAVA-MUSIC/ME-PLAY-36-Acoustic-Electric-Guitar-With-Lite-Bag-Frost-White-1500000411604.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'AG-YY3ZZ4AB','Silver Springs Acoustic Guitar','Solstice Sound Instruments',2,570.44,'Acoustic Guitar','https://www.guitarcenter.com/Martin/D-28-Standard-Dreadnought-Acoustic-Guitar-Natural-1500000141713.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'AG-6C7C8D9E0','Prairie Songbird Acoustic Guitar','Crescent City Guitars',10,399.25,'Acoustic Guitar','https://www.guitarcenter.com/Taylor/414ce-V-Class-Special-Edition-Grand-Auditorium-Acoustic-Electric-Guitar-Shaded-Edge-Burst-1500000223419.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'AG-F1F2G3G4H','Golden Fields Acoustic Guitar','Phoenix Tone Labs',0,1834.76,'Acoustic Guitar','https://www.guitarcenter.com/Gibson/SJ-200-Standard-Rosewood-Acoustic-Electric-Guitar-Rosewood-Burst-1500000419941.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'AG-5I6J7J8K9L','Crystal Clear Acoustic Guitar','Horizon Heights Luthiers',15,3276.59,'Acoustic Guitar','https://www.guitarcenter.com/Martin/Special-X-Series-Style-000-Cutaway-Acoustic-Electric-Guitar-Black-1500000289200.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'AG-0M1M2N3N4O','Thundering Falls Acoustic Guitar','Eclipse Electric Co.',3,145.83,'Acoustic Guitar','https://www.guitarcenter.com/Taylor/214e-DLX-Grand-Auditorium-Acoustic-Electric-Guitar-Tobacco-Sunburst-1500000213897.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'AG-5PP6QQ7RR','Alpine Echo Acoustic Guitar','Radiant Resonance Guitars',6,507.62,'Acoustic Guitar','https://www.guitarcenter.com/Yamaha/FX335C-Dreadnought-Acoustic-Electric-Guitar-Tobacco-Sunburst-1500000000265.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'AG-8S9TT0UUV','Mountain Majesty Acoustic Guitar','Zenith String Instruments',11,99.99,'Acoustic Guitar','https://www.guitarcenter.com/Fender/FA-135CE-All-Mahogany-Concert-Acoustic-Electric-Guitar-Mahogany-1500000254297.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'AG-1WW2XX3YY','Desert Rose Acoustic Guitar','Evergreen Guitar Works',0,5999,'Acoustic Guitar','https://www.guitarcenter.com/Martin/SC-10E-Road-Series-Sapele-Top-Acoustic-Electric-Guitar-Natural-1500000405469.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'AG-4ZZ5A6BB7C','Ivory Isle Acoustic Guitar','Aria Artisan Guitars',14,872.36,'Acoustic Guitar','https://www.guitarcenter.com/Yamaha/FG-Series-FGX800C-Acoustic-Electric-Guitar-Natural-1500000002758.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'AG-8DD9EEE0F','Honeyed Harmony Acoustic Guitar','Rivertone Guitar Company',8,287.45,'Acoustic Guitar','https://www.guitarcenter.com/Yamaha/FG830-Dreadnought-Acoustic-Guitar-Natural-1500000007788.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'AG-1G2HH3II4J','Ebony Echo Acoustic Guitar','Celestial Soundcraft',1,1639.28,'Acoustic Guitar','https://www.guitarcenter.com/Jasmine/S-34C-Cutaway-Acoustic-Guitar-Natural-1365435332888.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'AG-5K6LL7MM8N','Sunset Symphony Acoustic Guitar','Macs Guitar Co',19,1045.73,'Acoustic Guitar','https://www.guitarcenter.com/Martin/D-18-Standard-Dreadnought-Acoustic-Guitar-Natural-1334587637384.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'AG-9OO0PP1QQ','Wildflower Waltz Acoustic Guitar','Crestwood Instruments',0,389.21,'Acoustic Guitar','https://www.guitarcenter.com/Martin/Special-16-Style-Rosewood-Dreadnought-Acoustic-Electric-Guitar-Natural-1500000317260.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'AG-3RR4SS5TT','Sapphire Sky Acoustic Guitar','Phoenix Tone Labs',11,2200.55,'Acoustic Guitar','https://www.guitarcenter.com/Taylor/214e-DLX-Grand-Auditorium-Acoustic-Electric-Guitar-Tobacco-Sunburst-1500000213897.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'CG-J7K4','Serenade Symphony Classical Guitar','Harmony Forge Guitars',1,356.78,'Classical Guitar','https://www.guitarcenter.com/Taylor/814ce-N-Grand-Auditorium-Acoustic-Electric-Nylon-String-Guitar-Natural-1428332609501.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'CG-P9Q2','Moonlight Sonata Classical Guitar','NovaSound Guitar Co.',3,1245.32,'Classical Guitar','https://www.guitarcenter.com/Cordoba/Fusion-Orchestra-CE-Crossover-Classical-Acoustic-Electric-Guitar-Teardrop-Sunburst-1500000357600.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'CG-X3L6','Renaissance Rhapsody Classical Guitar','Crestwood Instruments',0,189.99,'Classical Guitar','https://www.guitarcenter.com/Taylor/214ce-N-Grand-Auditorium-Nylon-String-Acoustic-Electric-Guitar-Natural-1500000316965.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'CG-D5M8','Harmonic Heritage Classical Guitar','EchoCraft Guitar Works',9,2743.65,'Classical Guitar','https://www.guitarcenter.com/Taylor/312ce-N-Grand-Concert-Nylon-String-Acoustic-Electric-Guitar-Natural-1500000227736.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'CG-V1N9','Elysian Echo Classical Guitar','Solstice Sound Instruments',11,480.23,'Classical Guitar','https://www.guitarcenter.com/Cordoba/C12-CD-Classical-Guitar-Natural-1364498730977.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'CG-T2R5','Celestial Serenity Classical Guitar','Crescent City Guitars',7,1567.89,'Classical Guitar','https://www.guitarcenter.com/Yamaha/Nylon-String-Silent-Guitar-Dark-Red-Burst-1500000317736.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'CG-Y8S1','Melodic Muse Classical Guitar','Phoenix Tone Labs',15,999.99,'Classical Guitar','https://www.guitarcenter.com/Cordoba/C4-CE-Classical-Acoustic-Electric-Guitar-Antique-Charcoal-Burst-1500000401233.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'CG-H4T9','Sonata Serenity Classical Guitar','Horizon Heights Luthiers',4,308.75,'Classical Guitar','https://www.guitarcenter.com/Kremona/Verea-Cutaway-Acoustic-Electric-Nylon-Guitar-Natural-1390232636575.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'CG-C6U3','Opulent Overture Classical Guitar','Eclipse Electric Co.',2,799.99,'Classical Guitar','https://www.guitarcenter.com/Kremona/Romida-Classical-Guitar-Natural-1297873814614.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'CG-M7V9','Aurora Allegro Classical Guitar','Radiant Resonance Guitars',6,4332.45,'Classical Guitar','https://www.guitarcenter.com/Cordoba/Friederich-Luthier-Select-Cedar-Top-Acoustic-Classical-Guitar-Natural-1500000317180.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'CG-F9W1','Ethereal Elegance Classical Guitar','Harmony Forge Guitars',0,176.54,'Classical Guitar','https://www.guitarcenter.com/Dean/Espana-Classical-Guitar-Black-Burst-1500000367153.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'CG-Q3X6','Renaissance Reflection Classical Guitar','NovaSound Guitar Co.',13,999.99,'Classical Guitar','https://www.guitarcenter.com/Ibanez/TOD10N-Tim-Henson-Signature-Nylon-Acoustic-Electric-Guitar-Black-Flat-1500000386789.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'CG-W2Y4','Majestic Melody Classical Guitar','Crestwood Instruments',8,5799.99,'Classical Guitar','https://www.guitarcenter.com/Cordoba/Esteso-SP-Spruce-Top-Luthier-Select-Acoustic-Classical-Guitar-Natural-1500000317184.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'CG-Z5A1','Harmonic Haven Classical Guitar','EchoCraft Guitar Works',5,799.99,'Classical Guitar','https://www.guitarcenter.com/Taylor/Special-Ed-412ce-NR-Rosewood-Nylon-Acoustic-Electric-Grand-Concert-Guitar-Shaded-Edge-Burst-1500000356084.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'CG-E8B7','Opulent Orchid Classical Guitar','Solstice Sound Instruments',10,199.99,'Classical Guitar','https://www.guitarcenter.com/Alhambra/4-F-Flamenco-Acoustic-Guitar-Gloss-Natural-1500000012008.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'CG-N1C6','Celestial Cadence Classical Guitar','Crescent City Guitars',12,1249.99,'Classical Guitar','https://www.guitarcenter.com/Takamine/Concert-Classic-132S-Acoustic-Guitar-1273887992488.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'CG-K4D9','Elysian Elegance Classical Guitar','Phoenix Tone Labs',0,560,'Classical Guitar','https://www.guitarcenter.com/Cordoba/Stage-Nylon-String-Acoustic-Electric-Guitar-Edge-Burst-1500000364037.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'CG-U6E2','Serenade Symphony Classical Guitar','Horizon Heights Luthiers',14,399.99,'Classical Guitar','https://www.guitarcenter.com/Kremona/Rosa-Blanca-Flamenco-Guitar-Gloss-Natural-1332257140129.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'CG-I2F8','Ethereal Enchantment Classical Guitar','Eclipse Electric Co.',1,2999.99,'Classical Guitar','https://www.guitarcenter.com/Yamaha/NTX5-Acoustic-Electric-Classical-Guitar-Natural-1500000318422.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'CG-O3G7','Melodic Moonlight Classical Guitar','Radiant Resonance Guitars',3,149.99,'Classical Guitar','https://www.guitarcenter.com/Cordoba/C12-SP-Classical-Guitar-Natural-1364498730510.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'CG-A7H4','Celestial Cadence Classical Guitar','Zenith String Instruments',5,209.99,'Classical Guitar','https://www.guitarcenter.com/Jose-Ramirez/Studio-3-Spruce-Classical-Acoustic-Guitar-Natural-1500000410455.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'CG-J6I8','Aurora Aria Classical Guitar','Evergreen Guitar Works',9,999.99,'Classical Guitar','https://www.guitarcenter.com/Jose-Ramirez/Cutaway-2-Studio-Classical-Acoustic-Electric-Guitar-Natural-1500000410458.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'CG-P5J3','Renaissance Reverie Classical Guitar','Aria Artisan Guitars',2,429.99,'Classical Guitar','https://www.guitarcenter.com/Lucero/LC100-Classical-Guitar-Natural-1274115036014.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'CG-X9K1','Opulent Odyssey Classical Guitar','Rivertone Guitar Company',0,3499.99,'Classical Guitar','https://www.guitarcenter.com/Yamaha/C40-Gigmaker-Classical-Acoustic-Guitar-Pack-Natural-1274115033933.gc'
-);
-
-insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url) values (
-    'CG-D3L7','Weeping Willow Classical Guitar','Celestial Soundcraft',10,1999.99,'Classical Guitar','https://www.guitarcenter.com/Yamaha/C40-Classical-Guitar-Natural-1308847077941.gc'
-);
-
-/*
-------------------------------------------------------------------------------------------------------------------------
-DELIVERY_ADDRESS
-------------------------------------------------------------------------------------------------------------------------
-*/
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (0,'123 Main Street','Apt 101','AL','New York City',10001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (1,'456 Elm Street','Suite 202','AK','Los Angeles',20001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (2,'789 Oak Avenue','Unit 303','AZ','Chicago',30301,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (3,'101 Maple Lane','Building A','AR','Houston',40001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (4,'222 Pine Street','Apartment B','CA','Phoenix',50001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (5,'333 Cedar Avenue','Floor 1','CO','Philadelphia',60001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (6,'444 Birch Lane','Room 2','CT','San Antonio',70001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (7,'555 Willow Street','Level 3','DE','San Diego',80001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (8,'666 Magnolia Avenue','Flat 4','FL','Dallas',90001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (9,'777 Sycamore Lane','Floor 5','GA','San Jose',1001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (10,'888 Chestnut Street','Unit 6','HI','Austin',2001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (11,'999 Walnut Avenue','Suite 7','ID','Jacksonville',3001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (12,'111 Spruce Lane','Apartment 8','IL','San Francisco',4001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (13,'222 Cherry Street','Apt 9','IN','Indianapolis',5001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (14,'333 Aspen Avenue','Building 10','IA','Columbus',6001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (15,'444 Cypress Lane','Floor 11','KS','Fort Worth',7001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (16,'555 Fir Street','Room 12','KY','Charlotte',8001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (17,'666 Juniper Avenue','Level 13','LA','Seattle',9001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (18,'777 Redwood Lane','Suite 14','ME','Denver',11001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (19,'888 Hemlock Street','Apartment 15','MD','El Paso',12001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (20,'999 Locust Avenue','Unit 16','MA','Detroit',13001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (21,'111 Laurel Lane','Flat 17','MI','Washington',14001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (22,'222 Alder Street','Floor 18','MN','Boston',15001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (23,'333 Sequoia Avenue','Building 19','MS','Memphis',16001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (24,'444 Birchwood Lane','Apt 20','MO','Nashville',17001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (25,'555 Dogwood Street','Suite 21','MT','Portland',18001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (26,'666 Hickory Avenue','Unit 22','NE','Oklahoma City',19001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (27,'777 Pinecone Lane','Apartment 23','NV','Las Vegas',21001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (28,'888 Willowbrook Street','Floor 24','NH','Baltimore',22001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (29,'999 Oakwood Avenue','Room 25','NJ','Louisville',23001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (30,'111 Cedarwood Lane','Level 26','NM','Milwaukee',24001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (31,'222 Birchhill Street','Flat 27','NY','Albuquerque',25001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (32,'333 Elmwood Avenue','Unit 28','NC','Tucson',26001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (33,'444 Maplewood Lane','Building 29','ND','Fresno',27001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (34,'555 Oakhill Street','Floor 30','OH','Sacramento',28001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (35,'666 Pineview Avenue','Room 31','OK','Kansas City',29001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (36,'777 Sprucehill Lane','Level 32','OR','Long Beach',31001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (37,'888 Willowridge Street','Suite 33','PA','Mesa',32001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (38,'999 Cedarcrest Avenue','Apartment 34','RI','Atlanta',33001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (39,'111 Birchwoodhill Lane','Apt 35','SC','Colorado Springs',34001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (40,'222 Maplehurst Street','Floor 36','SD','Virginia Beach',35001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (41,'333 Oakridge Avenue','Building 37','TN','Raleigh',36001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (42,'444 Pinewoodhill Lane','Unit 38','TX','Omaha',37001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (43,'555 Willowvale Street','Suite 39','UT','Miami',38001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (44,'666 Cedarwoodridge Avenue','Apartment 40','VT','Oakland',39001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (45,'777 Maplewoodvale Lane','Flat 41','VA','Minneapolis',41001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (46,'888 Birchhillcrest Street','Room 42','WA','Tulsa',42001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (47,'999 Pinehurstwood Avenue','Level 43','WV','Wichita',43001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (48,'111 Oakdalehill Lane','Unit 44','WI','New Orleans',44001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (49,'222 Cedarglen Street','Floor 45','WY','Arlington',45001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (50,'333 Birchwoodhaven Avenue','Building 46','AL','Cleveland',46001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (51,'444 Maplewooddale Lane','Apartment 47','AK','Bakersfield',47001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (52,'555 Willowcrest Street','Suite 48','AZ','Tampa',48001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (53,'666 Cedarwoodhaven Avenue','Flat 49','AR','Aurora',49001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (54,'777 Pinevale Lane','Room 50','CA','Honolulu',51001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (55,'888 Oakhillcrest Street','Floor 51','CO','Anaheim',52001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (56,'999 Birchview Avenue','Level 52','CT','Santa Ana',53001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (57,'111 Maplewoodglade Lane','Apartment 53','WY','Corpus Christi',54001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (58,'222 Oakwoodvale Street','Building 54','AL','Riverside',55001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (59,'333 Pinehursthaven Avenue','Suite 55','AK','St. Louis',56001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (60,'444 Cedarwoodglade Lane','Unit 56','AZ','Lexington',57001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (61,'555 Willowwoodvale Street','Flat 57','AR','Stockton',58001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (62,'666 Oakwoodglade Avenue','Room 58','CA','Pittsburgh',59001,'USA ');
-
-insert into delivery_address (delivery_address_id,delivery_address_1,delivery_address_2,delivery_address_state,delivery_address_city,delivery_address_zip,delivery_address_country) values (63,'777 Pinevalewood Lane','Floor 59','CO','Cincinnati',56002,'USA ');
-
-
-/*
-------------------------------------------------------------------------------------------------------------------------
-CUSTOMER
-------------------------------------------------------------------------------------------------------------------------
-*/
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (0,'Kenny Brown','(201) 555-0123',0);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (1,'Bobby Brown','(202) 555-0456',1);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (2,'Jane Smith','(203) 555-0789',2);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (3,'Michael Johnson','(204) 555-0123',3);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (4,'Emily Brown','(205) 555-0456',4);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (5,'David Wilson','(206) 555-0789',5);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (6,'Jennifer Taylor','(207) 555-0123',6);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (7,'William Martinez','(208) 555-0456',7);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (8,'Mary Anderson','(209) 555-0789',8);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (9,'Richard Thomas','(210) 555-0123',9);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (10,'Linda Lee','(211) 555-0456',10);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (11,'Joseph White','(212) 555-0789',11);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (12,'Patricia Garcia','(213) 555-0123',12);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (13,'Robert Jones','(214) 555-0456',13);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (14,'Barbara Rodriguez','(215) 555-0789',14);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (15,'Daniel Harris','(216) 555-0123',15);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (16,'Nancy Jackson','(217) 555-0456',16);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (17,'Matthew Lewis','(218) 555-0789',17);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (18,'Karen Perez','(219) 555-0123',18);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (19,'Christopher Hall','(220) 555-0456',19);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (20,'Margaret Martinez','(221) 555-0789',20);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (21,'Charles Clark','(222) 555-0123',21);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (22,'Betty Walker','(223) 555-0456',22);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (23,'Andrew Young','(224) 555-0789',23);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (24,'Helen King','(225) 555-0123',24);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (25,'George Hernandez','(226) 555-0456',25);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (26,'Susan Scott','(227) 555-0789',26);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (27,'Edward Green','(228) 555-0123',27);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (28,'Lisa Nguyen','(229) 555-0456',28);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (29,'Brian Lopez','(230) 555-0789',29);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (30,'Jessica Hill','(231) 555-0123',30);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (31,'Steven Adams','(232) 555-0456',31);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (32,'Dorothy Wright','(267) 555-0123',32);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (33,'Paul Turner','(268) 555-0456',33);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (34,'Ashley Martin','(269) 555-0789',34);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (35,'Kenneth Torres','(270) 555-0123',35);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (36,'Sandra Hall','(271) 555-0456',36);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (37,'Mark Morris','(272) 555-0789',37);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (38,'Carol Allen','(273) 555-0123',38);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (39,'James Diaz','(274) 555-0456',39);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (40,'Michelle Lee','(275) 555-0789',40);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (41,'Ronald Smith','(276) 555-0123',41);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (42,'Laura Brown','(277) 555-0456',42);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (43,'Donald Taylor','(278) 555-0789',43);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (44,'Sarah Wilson','(279) 555-0123',44);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (45,'Frank Johnson','(280) 555-0456',45);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (46,'Kimberly Harris','(281) 555-0789',46);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (47,'Larry Rodriguez','(282) 555-0123',47);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (48,'Donna Jackson','(283) 555-0456',48);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (49,'Daniel Lewis','(284) 555-0789',49);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (50,'Carolyn Perez','(285) 555-0123',50);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (51,'Kevin Hall','(286) 555-0456',51);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (52,'Amanda Clark','(287) 555-0789',52);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (53,'Justin Walker','(288) 555-0123',53);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (54,'Betty Young','(289) 555-0456',54);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (55,'Christopher Hernandez','(290) 555-0789',55);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (56,'Brenda Scott','(291) 555-0123',56);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (57,'Jerry Green','(292) 555-0456',57);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (58,'Deborah Nguyen','(293) 555-0789',58);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (59,'Ryan Lopez','(294) 555-0123',59);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (60,'Pamela Hill','(295) 555-0456',60);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (61,'Gary Adams','(296) 555-0789',61);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (62,'Debra Wright','(297) 555-0123',62);
-
-insert into customer (customer_id,customer_name,customer_phone,customer_address_id) values (63,'Scott Turner','(298) 555-0456',63);
-
-/*
-------------------------------------------------------------------------------------------------------------------------
-ORDERTBL
-------------------------------------------------------------------------------------------------------------------------
-*/
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('AFC9K3',5169.97,'undefined',0);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('JHD5T9',932.99,'undefined',1);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('PLM2Q1',423.99,'undefined',2);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('NSX7R4',932.99,'undefined',3);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('VZM6L2',2675.99,'undefined',4);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('GHP3N8',932.99,'undefined',5);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('IJK1O7',932.99,'undefined',6);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('YTR4P9',2675.99,'undefined',7);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('XCF8U2',229.99,'undefined',8);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('LMN2W6',289.99,'undefined',9);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('POD7S1',932.99,'undefined',10);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('VBN9X4',932.99,'undefined',11);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('WER3Y8',492.99,'undefined',12);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('KJH5Z1',756.99,'undefined',13);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('QWE8A2',229.99,'undefined',14);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('MNB1B4',756.99,'undefined',15);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('IOP4C7',229.99,'undefined',16);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('ASD7D9',5169.97,'undefined',17);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('ZXC9E6',756.99,'undefined',18);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('RFG2F8',489.99,'undefined',19);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('TGB1G2',229.99,'undefined',20);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('EDC6H5',5169.97,'undefined',21);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('UIO0I4',932.99,'undefined',22);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('OLP5J1',229.99,'undefined',23);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('QAZ2K3',489.99,'undefined',24);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('WSX3L5',932.99,'undefined',25);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('RFV4M8',932.99,'undefined',26);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('TGB7N6',932.99,'undefined',27);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('YHN8O1',932.99,'undefined',28);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('UJM9P2',229.99,'undefined',29);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('IKJ0Q4',756.99,'undefined',30);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('YTR5R6',932.99,'undefined',31);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('UJM8S9',932.99,'undefined',32);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('VBN7T2',932.99,'undefined',33);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('WSX6U3',932.99,'undefined',34);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('QAZ5V1',932.99,'undefined',35);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('EDC4W3',932.99,'undefined',36);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('RFV3X5',932.99,'undefined',37);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('PLM2Y8',932.99,'undefined',38);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('NSX1Z9',932.99,'undefined',39);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('VZM0A2',932.99,'undefined',40);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('GHP9B5',932.99,'undefined',41);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('IJK8C3',932.99,'undefined',42);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('WER7D6',932.99,'undefined',43);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('KJH6E9',932.99,'undefined',44);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('QWE5F1',932.99,'undefined',45);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('MNB4G3',199.99,'undefined',46);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('POD3H5',1699.99,'undefined',47);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('IOP2I8',549.99,'undefined',48);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('ASD1J7',799.99,'undefined',49);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('ZXC0K6',1699.99,'undefined',50);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('RFG9L5',1999.99,'undefined',51);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('TGB8M4',569.99,'undefined',52);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('EDC7N2',499.99,'undefined',53);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('UIO6O1',1299.99,'undefined',54);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('OLP5P3',549.99,'undefined',55);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('QAZ4Q8',359.99,'undefined',56);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('WSX3R5',999.99,'undefined',57);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('RFV2S1',569.99,'undefined',58);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('PLM1T4',499.99,'undefined',59);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('NSX0U7',1299.99,'undefined',60);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('VZM9V5',549.99,'undefined',61);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('GHP8W3',359.99,'undefined',62);
-
-insert into ordertbl (order_id,order_total,order_product_ids,customer_id) values ('IJK7X',999.99,'undefined',63);
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('EG-1A2B3C4D','Gleaming Burst Electric Guitar','Harmony Forge Guitars',17,3876.99,'Electric Guitar','https://media.guitarcenter.com/is/image/MMGS7/M07990000002000-02-600x600.jpg','Iconic instrument with versatile sound favored by rock legends for its smooth playability and distinct tone.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('EG-5E6F7G8H','Midnight Sparkle Electric Guitar','NovaSound Guitar Co.',3,249.99,'Electric Guitar','https://media.guitarcenter.com/is/image/MMGS7/L69587000003000-02-600x600.jpg','Classic guitar known for warm tones and sustain beloved by blues and rock players for its rich sound and iconic design.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('EG-9I0J1K2L','Sonic Fury Electric Guitar','Crestwood Instruments',0,1799.99,'Electric Guitar','https://media.guitarcenter.com/is/image/MMGS7/H96103000002000-02-600x600.jpg','Renowned for balanced tone and exquisite craftsmanship ideal for live performances and recording sessions with its articulate sound and comfortable playability.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('EG-N2O3P4Q5R','Vintage Velvet Electric Guitar','EchoCraft Guitar Works',29,423.99,'Electric Guitar','https://media.guitarcenter.com/is/image/MMGS7/L59796000001000-02-600x600.jpg','Legendary instrument with rich bass and clear trebles cherished by musicians for its powerful projection and timeless character.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('EG-6S7T8U9V','Cosmic Horizon Electric Guitar','Solstice Sound Instruments',8,5999.99,'Electric Guitar','https://media.guitarcenter.com/is/image/MMGS7/M05675000001000-02-600x600.jpg','High-performance guitar with fast neck and hot pickups perfect for shredding and heavy music with its sleek design and aggressive tone.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('EG-BBCDD1E2','Twilight Shimmer Electric Guitar','Crescent City Guitars',11,932.99,'Electric Guitar','https://media.guitarcenter.com/is/image/MMGS7/L46829000002000-02-600x600.jpg','Premium model with stunning looks and versatile tone beloved by players across genres for its craftsmanship and dynamic sound.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('EG-3FG4HI5JJ','Radiant Eclipse Electric Guitar','Phoenix Tone Labs',22,2675.99,'Electric Guitar','https://media.guitarcenter.com/is/image/MMGS7/L79166000002000-02-600x600.jpg','Iconic guitar with lush vintage sound adored by artists for its elegance and sonic versatility.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('EG-6K7LM8N9O','Thunderbolt Thrust Electric Guitar','Horizon Heights Luthiers',5,542.99,'Electric Guitar','https://media.guitarcenter.com/is/image/MMGS7/L81768000010000-02-600x600.jpg','Semi-hollow guitar with bright jangly tone loved by musicians for its distinctive sound and retro vibe.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('EG-PPQQRRSST','Mystic Mirage Electric Guitar','Eclipse Electric Co.',1,149.99,'Electric Guitar','https://media.guitarcenter.com/is/image/MMGS7/M07589000001000-02-600x600.jpg','Sleek instrument designed for speed and precision a favorite of shredders for its effortless playability and aggressive tone.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('EG-0UV1WW2XX','Neon Blaze Electric Guitar','Radiant Resonance Guitars',28,289.99,'Electric Guitar','https://media.guitarcenter.com/is/image/MMGS7/M08934000001000-02-600x600.jpg','Affordable option with solid sound and comfortable playability perfect for players with its reliable performance and classic design.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('EG-YY3ZZ4AB','Inferno Ignition Electric Guitar','Zenith String Instruments',4,756.99,'Electric Guitar','https://media.guitarcenter.com/is/image/MMGS7/L84983000001000-02-600x600.jpg','Distinctive guitar with chiming tone and vintage appeal favored by musicians for its unique sound and iconic design.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('EG-6C7C8D9E0','Shadow Dusk Electric Guitar','Evergreen Guitar Works',0,492.99,'Electric Guitar','https://media.guitarcenter.com/is/image/MMGS7/M07709000002000-02-600x600.jpg','Semi-hollow model with warm resonant tone cherished by players for its smooth playability and classic styling.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('EG-F1F2G3G4H','Sapphire Serenade Electric Guitar','Aria Artisan Guitars',19,229.99,'Electric Guitar','https://media.guitarcenter.com/is/image/MMGS7/M04077000003000-02-600x600.jpg','High-performance guitar with powerful tone and sleek design ideal for heavy music with its aggressive sound and comfortable playability.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('EG-5I6J7J8K9L','Ember Ember Electric Guitar','Rivertone Guitar Company',9,1598.99,'Electric Guitar','https://media.guitarcenter.com/is/image/MMGS7/M07639000001000-02-600x600.jpg','Affordable version of a classic instrument loved by players for its iconic design and versatile tone.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('EG-0M1M2N3N4O','Lunar Luster Electric Guitar','Celestial Soundcraft',27,399.99,'Electric Guitar','https://media.guitarcenter.com/is/image/MMGS7/M04244000001000-02-600x600.jpg','Compact guitar with big sound perfect for travel and intimate performances with its balanced tone and comfortable playability.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('EG-5PP6QQ7RR','Starlight Symphony Electric Guitar','NovaSound Guitar Co.',6,1935.99,'Electric Guitar','https://media.guitarcenter.com/is/image/MMGS7/M02121000001000-02-600x600.jpg','Iconic guitar with biting tone and sleek design favored by musicians for its aggressive sound and effortless playability.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('EG-8S9TT0UUV','Golden Sunburst Electric Guitar','Crestwood Instruments',2,867.99,'Electric Guitar','https://media.guitarcenter.com/is/image/MMGS7/M02122000001000-02-600x600.jpg','Classic instrument with powerful projection and warm balanced tone cherished by musicians for its timeless sound and playability.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('EG-1WW2XX3YY','Silent Night Electric Guitar','Phoenix Tone Labs',14,3210.99,'Electric Guitar','https://media.guitarcenter.com/is/image/MMGS7/L46834000001000-02-600x600.jpg','Signature model known for speed and versatility beloved by virtuoso players for its innovative design and expressive tone.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('EG-4ZZ5A6BB7C','Ruby Rhapsody Electric Guitar','NovaTone Guitars',25,576.99,'Electric Guitar','https://media.guitarcenter.com/is/image/MMGS7/Player-Stratocaster-Maple-Fingerboard-Limited-Edition-Electric-Guitar-Black/L46833000001000-00-264x264.jpg','Affordable version of a premium guitar loved by players for its quality craftsmanship and versatile tone.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('EG-8DD9EEE0F','Aurora Borealis Electric Guitar','Phoenix Tone Labs',10,489.99,'Electric Guitar','https://media.guitarcenter.com/is/image/MMGS7/L99283000002000-02-600x600.jpg','Timeless instrument with twangy tone and simple design favored by players for its clarity and playability.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('EG-1G2HH3II4J','Crimson Cascade Electric Guitar','NovaSound Guitar Co.',0,1054.99,'Electric Guitar','https://media.guitarcenter.com/is/image/MMGS7/L95519000001000-02-600x600.jpg','Versatile guitar with powerful tone and sleek design ideal for heavy music with its aggressive sound and comfortable playability.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('EG-5K6LL7MM8N','Ocean Wave Electric Guitar','Crestwood Instruments',7,2649.99,'Electric Guitar','https://media.guitarcenter.com/is/image/MMGS7/G5427T-Electromatic-Limited-Edition-Electric-Guitar-Black-Pearl-Metallic/L88519000001000-00-264x264.jpg','Classic guitar with balanced tone and comfortable playability cherished by players for its responsiveness and clarity.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('EG-9OO0PP1QQ','Jade Jive Electric Guitar','Phoenix Tone Labs',26,799.99,'Electric Guitar','https://media.guitarcenter.com/is/image/MMGS7/G5427TG-Electromatic-Hollowbody-Single-Cut-Bigsby-Limited-Edition-Electric-Guitar-Champagne-White-Gold/M03605000001001-00-264x264.jpg','Iconic instrument with warm smooth tone and versatile playability beloved by players for its classic sound and elegant design.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('EG-1G2HH3IK4R','Platinum Pulse Electric Guitar','NovaTone Guitars',20,444.99,'Electric Guitar','https://media.guitarcenter.com/is/image/MMGS7/L69975000005000-02-600x600.jpg','Reliable option with balanced tone and comfortable playability perfect for live performances and recording sessions with its versatile sound and stage-ready design.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('AG-5E6F7G8H','Whispering Woods Acoustic Guitar','NovaSound Guitar Co.',18,189.48,'Acoustic Guitar','https://media.guitarcenter.com/is/image/MMGS7/M08663000001000-02-600x600.jpg','Signature guitar known for aggressive tone and distinctive design loved by players for its powerful sound and effortless playability.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('AG-9I0J1K2L','Midnight Melody Acoustic Guitar','Crestwood Instruments',0,3978.21,'Acoustic Guitar','https://media.guitarcenter.com/is/image/MMGS7/H83179000001000-02-600x600.jpg','Affordable option with versatile tone and comfortable playability perfect for players with its reliable performance and classic design.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('AG-N2O3P4Q5R','Ocean Breeze Acoustic Guitar','Arizona Guitars',12,5932.14,'Acoustic Guitar','https://media.guitarcenter.com/is/image/MMGS7/K86800000002000-02-600x600.jpg','Signature model known for expressive tone and sleek design beloved by players for its quality craftsmanship and versatile sound.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('AG-6S7T8U9V','Ember Glow Acoustic Guitar','NovaTone Guitars',4,475.89,'Acoustic Guitar','https://media.guitarcenter.com/is/image/MMGS7/L97513000001000-02-600x600.jpg','Iconic instrument with rich mellow tone and unique design favored by players for its versatility and vintage vibe.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('AG-BBCDD1E2','Cedar Creek Acoustic Guitar','Phoenix Tone Labs',20,209.36,'Acoustic Guitar','https://media.guitarcenter.com/is/image/MMGS7/J06028000003000-02-600x600.jpg','Distinctive guitar with edgy tone and futuristic design cherished by players for its aggressive sound and eye-catching looks.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('AG-3FG4HI5JJ','Autumn Haze Acoustic Guitar','Harmony Forge Guitars',5,321.57,'Acoustic Guitar','https://media.guitarcenter.com/is/image/MMGS7/L28131000002000-02-600x600.jpg','Compact guitar with big sound perfect for travel and intimate performances with its balanced tone and comfortable playability.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('AG-6K7LM8N9O','Whispering Willow Acoustic Guitar','NovaSound Guitar Co.',0,104.62,'Acoustic Guitar','https://media.guitarcenter.com/is/image/MMGS7/L68100000001000-02-600x600.jpg','High-performance option with fast neck and hot pickups perfect for shredding and heavy music with its sleek design and aggressive tone.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('AG-PPQQRRSST','Maple Mist Acoustic Guitar','Crestwood Instruments',9,486.75,'Acoustic Guitar','https://media.guitarcenter.com/is/image/MMGS7/L97201000004000-05-600x600.jpg','Versatile guitar with balanced tone and comfortable playability ideal for live performances and recording sessions with its expressive sound and stage-ready design.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('AG-0UV1WW2XX','Vintage Vine Acoustic Guitar','EchoCraft Guitar Works',16,220.91,'Acoustic Guitar','https://media.guitarcenter.com/is/image/MMGS7/M06305000002000-02-600x600.jpg','Affordable version of a classic instrument loved by players for its retro vibe and distinctive sound.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('AG-YY3ZZ4AB','Silver Springs Acoustic Guitar','Solstice Sound Instruments',2,570.44,'Acoustic Guitar','https://media.guitarcenter.com/is/image/MMGS7/K40776000001000-02-600x600.jpg','Affordable version of an iconic guitar cherished by players for its classic design and versatile tone.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('AG-6C7C8D9E0','Prairie Songbird Acoustic Guitar','Crescent City Guitars',10,399.25,'Acoustic Guitar','https://media.guitarcenter.com/is/image/MMGS7/L26331000001000-02-600x600.jpg','Sleek guitar known for aggressive tone and distinctive design favored by players for its powerful sound and effortless playability.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('AG-F1F2G3G4H','Golden Fields Acoustic Guitar','Phoenix Tone Labs',0,1834.76,'Acoustic Guitar','https://media.guitarcenter.com/is/image/MMGS7/M09031000001000-02-600x600.jpg','Reliable option with balanced tone and comfortable playability perfect for live performances and recording sessions with its versatile sound and stage-ready design.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('AG-5I6J7J8K9L','Crystal Clear Acoustic Guitar','Horizon Heights Luthiers',15,3276.59,'Acoustic Guitar','https://media.guitarcenter.com/is/image/MMGS7/L66003000001000-02-600x600.jpg','Distinctive guitar with chiming tone and vintage appeal cherished by players for its unique sound and iconic design.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('AG-0M1M2N3N4O','Thundering Falls Acoustic Guitar','Eclipse Electric Co.',3,145.83,'Acoustic Guitar','https://media.guitarcenter.com/is/image/MMGS7/L18959000001000-02-600x600.jpg','Classic guitar with rich full tone and comfortable playability beloved by players for its timeless sound and elegant design.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('AG-5PP6QQ7RR','Alpine Echo Acoustic Guitar','Radiant Resonance Guitars',6,507.62,'Acoustic Guitar','https://media.guitarcenter.com/is/image/MMGS7/J29063000003000-02-600x600.jpg','Versatile option with powerful tone and sleek design ideal for heavy music with its aggressive sound and comfortable playability.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('AG-8S9TT0UUV','Mountain Majesty Acoustic Guitar','Zenith String Instruments',11,99.99,'Acoustic Guitar','https://media.guitarcenter.com/is/image/MMGS7/L44617000001000-02-600x600.jpg','Semi-hollow model with warm resonant tone cherished by players for its smooth playability and classic styling.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('AG-1WW2XX3YY','Desert Rose Acoustic Guitar','Evergreen Guitar Works',0,5999,'Acoustic Guitar','https://media.guitarcenter.com/is/image/MMGS7/M04183000001000-02-600x600.jpg','Iconic bass known for solid tone and simple design favored by players for its punchy sound and reliable performance.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('AG-4ZZ5A6BB7C','Ivory Isle Acoustic Guitar','Aria Artisan Guitars',14,872.36,'Acoustic Guitar','https://media.guitarcenter.com/is/image/MMGS7/J31555000001000-02-600x600.jpg','Classic guitar with warm balanced tone and comfortable playability cherished by players for its expressive sound and timeless design.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('AG-8DD9EEE0F','Honeyed Harmony Acoustic Guitar','Rivertone Guitar Company',8,287.45,'Acoustic Guitar','https://media.guitarcenter.com/is/image/MMGS7/J33498000001000-02-600x600.jpg','Reliable option with balanced tone and comfortable playability perfect for live performances and recording sessions with its versatile sound and stage-ready design.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('AG-1G2HH3II4J','Ebony Echo Acoustic Guitar','Celestial Soundcraft',1,1639.28,'Acoustic Guitar','https://media.guitarcenter.com/is/image/MMGS7/H96926000001000-02-600x600.jpg','High-performance model with fast neck and hot pickups perfect for shredding and heavy music with its sleek design and aggressive tone.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('AG-5K6LL7MM8N','Sunset Symphony Acoustic Guitar','Mac's Guitar Co',19,1045.73,'Acoustic Guitar','https://media.guitarcenter.com/is/image/MMGS7/H83179000001000-02-600x600.jpg','Affordable version of a premium instrument loved by players for its quality craftsmanship and versatile tone.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('AG-9OO0PP1QQ','Wildflower Waltz Acoustic Guitar','Crestwood Instruments',0,389.21,'Acoustic Guitar','https://media.guitarcenter.com/is/image/MMGS7/L73540000001000-02-600x600.jpg','Iconic bass with smooth tone and comfortable playability favored by players for its versatile sound and timeless design.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('AG-3RR4SS5TT','Sapphire Sky Acoustic Guitar','Phoenix Tone Labs',11,2200.55,'Acoustic Guitar','https://media.guitarcenter.com/is/image/MMGS7/L18959000001000-02-600x600.jpg','Versatile guitar with powerful tone and sleek design ideal for heavy music with its aggressive sound and comfortable playability.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('CG-J7K4','Serenade Symphony Classical Guitar','Harmony Forge Guitars',1,356.78,'Classical Guitar','https://media.guitarcenter.com/is/image/MMGS7/J22561000001000-02-600x600.jpg','Classic guitar with balanced tone and comfortable playability cherished by players for its responsiveness and clarity.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('CG-P9Q2','Moonlight Sonata Classical Guitar','NovaSound Guitar Co.',3,1245.32,'Classical Guitar','https://media.guitarcenter.com/is/image/MMGS7/L48605000002000-02-600x600.jpg','Iconic instrument with versatile sound favored by rock legends for its smooth playability and distinct tone.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('CG-X3L6','Renaissance Rhapsody Classical Guitar','Crestwood Instruments',0,189.99,'Classical Guitar','https://media.guitarcenter.com/is/image/MMGS7/L73505000001000-02-600x600.jpg','Classic guitar known for warm tones and sustain beloved by blues and rock players for its rich sound and iconic design.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('CG-D5M8','Harmonic Heritage Classical Guitar','EchoCraft Guitar Works',9,2743.65,'Classical Guitar','https://media.guitarcenter.com/is/image/MMGS7/L28953000001000-02-600x600.jpg','Renowned for balanced tone and exquisite craftsmanship ideal for live performances and recording sessions with its articulate sound and comfortable playability.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('CG-V1N9','Elysian Echo Classical Guitar','Solstice Sound Instruments',11,480.23,'Classical Guitar','https://media.guitarcenter.com/is/image/MMGS7/H96255000001000-02-600x600.jpg','Legendary instrument with rich bass and clear trebles cherished by musicians for its powerful projection and timeless character.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('CG-T2R5','Celestial Serenity Classical Guitar','Crescent City Guitars',7,1567.89,'Classical Guitar','https://media.guitarcenter.com/is/image/MMGS7/J26083000004000-02-600x600.jpg','High-performance guitar with fast neck and hot pickups perfect for shredding and heavy music with its sleek design and aggressive tone.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('CG-Y8S1','Melodic Muse Classical Guitar','Phoenix Tone Labs',15,999.99,'Classical Guitar','https://media.guitarcenter.com/is/image/MMGS7/K46942000002000-02-600x600.jpg','Premium model with stunning looks and versatile tone beloved by players across genres for its craftsmanship and dynamic sound.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('CG-H4T9','Sonata Serenity Classical Guitar','Horizon Heights Luthiers',4,308.75,'Classical Guitar','https://media.guitarcenter.com/is/image/MMGS7/J05991000001000-02-600x600.jpg','Iconic guitar with lush vintage sound adored by artists for its elegance and sonic versatility.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('CG-C6U3','Opulent Overture Classical Guitar','Eclipse Electric Co.',2,799.99,'Classical Guitar','https://media.guitarcenter.com/is/image/MMGS7/H72431000001000-02-600x600.jpg','Semi-hollow guitar with bright jangly tone loved by musicians for its distinctive sound and retro vibe.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('CG-M7V9','Aurora Allegro Classical Guitar','Radiant Resonance Guitars',6,4332.45,'Classical Guitar','https://media.guitarcenter.com/is/image/MMGS7/L73518000001000-02-600x600.jpg','Sleek instrument designed for speed and precision a favorite of shredders for its effortless playability and aggressive tone.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('CG-F9W1','Ethereal Elegance Classical Guitar','Harmony Forge Guitars',0,176.54,'Classical Guitar','https://media.guitarcenter.com/is/image/MMGS7/L91828000001000-02-600x600.jpg','Affordable option with solid sound and comfortable playability perfect for players with its reliable performance and classic design.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('CG-Q3X6','Renaissance Reflection Classical Guitar','NovaSound Guitar Co.',13,999.99,'Classical Guitar','https://media.guitarcenter.com/is/image/MMGS7/L98243000001000-02-600x600.jpg','Distinctive guitar with chiming tone and vintage appeal favored by musicians for its unique sound and iconic design.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('CG-W2Y4','Majestic Melody Classical Guitar','Crestwood Instruments',8,5799.99,'Classical Guitar','https://media.guitarcenter.com/is/image/MMGS7/L73549000001000-02-600x600.jpg','Semi-hollow model with warm resonant tone cherished by players for its smooth playability and classic styling.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('CG-Z5A1','Harmonic Haven Classical Guitar','EchoCraft Guitar Works',5,799.99,'Classical Guitar','https://media.guitarcenter.com/is/image/MMGS7/L86962000001000-02-600x600.jpg','High-performance guitar with powerful tone and sleek design ideal for heavy music with its aggressive sound and comfortable playability.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('CG-E8B7','Opulent Orchid Classical Guitar','Solstice Sound Instruments',10,199.99,'Classical Guitar','https://media.guitarcenter.com/is/image/MMGS7/J38878000001000-02-600x600.jpg','Affordable version of a classic instrument loved by players for its iconic design and versatile tone.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('CG-N1C6','Celestial Cadence Classical Guitar','Crescent City Guitars',12,1249.99,'Classical Guitar','https://media.guitarcenter.com/is/image/MMGS7/516338000000000-00-600x600.jpg','Compact guitar with big sound perfect for travel and intimate performances with its balanced tone and comfortable playability.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('CG-K4D9','Elysian Elegance Classical Guitar','Phoenix Tone Labs',0,560,'Classical Guitar','https://media.guitarcenter.com/is/image/MMGS7/L90222000001000-02-600x600.jpg','Iconic guitar with biting tone and sleek design favored by musicians for its aggressive sound and effortless playability.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('CG-U6E2','Serenade Symphony Classical Guitar','Horizon Heights Luthiers',14,399.99,'Classical Guitar','https://media.guitarcenter.com/is/image/MMGS7/H82485000001000-02-600x600.jpg','Classic instrument with powerful projection and warm balanced tone cherished by musicians for its timeless sound and playability.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('CG-I2F8','Ethereal Enchantment Classical Guitar','Eclipse Electric Co.',1,2999.99,'Classical Guitar','https://media.guitarcenter.com/is/image/MMGS7/L73866000001000-02-600x600.jpg','Signature model known for speed and versatility beloved by virtuoso players for its innovative design and expressive tone.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('CG-O3G7','Melodic Moonlight Classical Guitar','Radiant Resonance Guitars',3,149.99,'Classical Guitar','https://media.guitarcenter.com/is/image/MMGS7/H96236000001000-02-600x600.jpg','Affordable version of a premium guitar loved by players for its quality craftsmanship and versatile tone.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('CG-A7H4','Celestial Cadence Classical Guitar','Zenith String Instruments',5,209.99,'Classical Guitar','https://media.guitarcenter.com/is/image/MMGS7/M06017000001000-02-600x600.jpg','Timeless instrument with twangy tone and simple design favored by players for its clarity and playability.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('CG-J6I8','Aurora Aria Classical Guitar','Evergreen Guitar Works',9,999.99,'Classical Guitar','https://media.guitarcenter.com/is/image/MMGS7/M06016000001000-02-600x600.jpg','Versatile guitar with powerful tone and sleek design ideal for heavy music with its aggressive sound and comfortable playability.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('CG-P5J3','Renaissance Reverie Classical Guitar','Aria Artisan Guitars',2,429.99,'Classical Guitar','https://media.guitarcenter.com/is/image/MMGS7/518978000010000-02-600x600.jpg','Classic guitar with balanced tone and comfortable playability cherished by players for its responsiveness and clarity.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('CG-X9K1','Opulent Odyssey Classical Guitar','Rivertone Guitar Company',0,3499.99,'Classical Guitar','https://media.guitarcenter.com/is/image/MMGS7/510693000000000-02-600x600.jpg','Iconic instrument with warm smooth tone and versatile playability beloved by players for its classic sound and elegant design.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('CG-D3L7','Weeping Willow Classical Guitar','Celestial Soundcraft',10,1999.99,'Classical Guitar','https://media.guitarcenter.com/is/image/MMGS7/H75956000001000-02-600x600.jpg','Reliable option with balanced tone and comfortable playability perfect for live performances and recording sessions with its versatile sound and stage-ready design.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('BG-E2C7P8','Blackstone Burst Bass Guitar','Zenith String Instruments',3,1299.99,'Bass Guitar','https://media.guitarcenter.com/is/image/MMGS7/L88433000001000-02-600x600.jpg','Semi-hollow model with warm resonant tone ideal for players with its smooth playability and classic styling.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('BG-A5G4H4','Thunder Tone Bass Guitar','Eclipse Electric Co.',7,459.99,'Bass Guitar','https://media.guitarcenter.com/is/image/MMGS7/L76115000001000-02-600x600.jpg','Signature guitar known for aggressive tone and distinctive design loved by players for its powerful sound and effortless playability.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('BG-J9C2I3','Lightning Dome Bass Guitar','Eclipse Electric Co.',2,3599.99,'Bass Guitar','https://media.guitarcenter.com/is/image/MMGS7/J27306000002000-02-600x600.jpg','Affordable option with versatile tone and comfortable playability perfect for players with its reliable performance and classic design.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('BG-M4P1K0','Synchro Stingray Bass Guitar','Phoenix Tone Labs',4,1499.99,'Bass Guitar','https://media.guitarcenter.com/is/image/MMGS7/M07642000001000-02-600x600.jpg','Signature model known for expressive tone and sleek design beloved by players for its quality craftsmanship and versatile sound.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('BG-Q6E7Z0','Smooth Snowflake Bass Guitar','Harmony Forge Guitars',9,349.99,'Bass Guitar','https://media.guitarcenter.com/is/image/MMGS7/L95373000001000-02-600x600.jpg','Iconic instrument with rich mellow tone and unique design favored by players for its versatility and vintage vibe.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('BG-Y9N5L2','Red Rocket Bass Guitar','Phoenix Tone Labs',10,969.99,'Bass Guitar','https://media.guitarcenter.com/is/image/MMGS7/M07641000001000-02-600x600.jpg','Distinctive guitar with edgy tone and futuristic design cherished by players for its aggressive sound and eye-catching looks.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('BG-S3J9O1','Elegant Elephant Bass Guitar','Evergreen Guitar Works',4,2399.99,'Bass Guitar','https://media.guitarcenter.com/is/image/MMGS7/M07642000001000-02-600x600.jpg','Compact guitar with big sound perfect for travel and intimate performances with its balanced tone and comfortable playability.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('BG-R6T0L5','Fiery Fury Bass Guitar','NovaSound Guitar Co.',13,829.99,'Bass Guitar','https://media.guitarcenter.com/is/image/MMGS7/M07644000001000-02-600x600.jpg','High-performance option with fast neck and hot pickups perfect for shredding and heavy music with its sleek design and aggressive tone.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('BG-N2P8G4','Easy Elegance Bass Guitar','Radiant Resonance Guitars',5,789.99,'Bass Guitar','https://media.guitarcenter.com/is/image/MMGS7/L21559000003000-02-600x600.jpg','Versatile guitar with balanced tone and comfortable playability ideal for live performances and recording sessions with its expressive sound and stage-ready design.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('BG-X0W8P1','Dynamic Dream Bass Guitar','Crescent City Guitars',1,3259.99,'Bass Guitar','https://media.guitarcenter.com/is/image/MMGS7/L92477000001000-02-600x600.jpg','Affordable version of a classic instrument loved by players for its retro vibe and distinctive sound.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('BG-V9K0R3','Ultra Jazz Bass Guitar','Rivertone Guitar Company',0,452.99,'Bass Guitar','https://media.guitarcenter.com/is/image/MMGS7/L94033000001000-02-600x600.jpg','Affordable version of an iconic guitar cherished by players for its classic design and versatile tone.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('BG-N5A7C2','Tranquil Timbre Bass Guitar','Solstice Sound Instruments',6,929.33,'Bass Guitar','https://media.guitarcenter.com/is/image/MMGS7/K46973000001000-02-600x600.jpg','Sleek guitar known for aggressive tone and distinctive design favored by players for its powerful sound and effortless playability.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('BG-F3O1J3','Jurassic Jericho Bass Guitar','Zenith String Instruments',16,760.39,'Bass Guitar','https://media.guitarcenter.com/is/image/MMGS7/M06790000001000-02-600x600.jpg','Reliable option with balanced tone and comfortable playability perfect for live performances and recording sessions with its versatile sound and stage-ready design.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('BG-T0L5N7','Tonal Tremors Bass Guitar','Celestial Soundcraft',8,259.99,'Bass Guitar','https://media.guitarcenter.com/is/image/MMGS7/L90971000001000-02-600x600.jpg','Distinctive guitar with chiming tone and vintage appeal cherished by players for its unique sound and iconic design.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('BG-D6G4R9','Silky Serenade Bass Guitar','NovaSound Guitar Co.',3,1599.99,'Bass Guitar','https://media.guitarcenter.com/is/image/MMGS7/L83738000001000-02-600x600.jpg','Classic guitar with rich full tone and comfortable playability beloved by players for its timeless sound and elegant design.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('BG-K0F6J9','Smashing Stegosaurus Bass Guitar','Mac's Guitar Co',7,1259.99,'Bass Guitar','https://media.guitarcenter.com/is/image/MMGS7/L57533000001000-02-600x600.jpg','Versatile option with powerful tone and sleek design ideal for heavy music with its aggressive sound and comfortable playability.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('BG-B8G4L2','Beautiful Burst Bass Guitar','Arizona Guitars',12,205.99,'Bass Guitar','https://media.guitarcenter.com/is/image/MMGS7/L72450000002000-02-600x600.jpg','Semi-hollow model with warm resonant tone cherished by players for its smooth playability and classic styling.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('BG-Z0K0F9','Careful Charm Bass Guitar','EchoCraft Guitar Works',4,2100.99,'Bass Guitar','https://media.guitarcenter.com/is/image/MMGS7/L97795000015000-02-600x600.jpg','Iconic bass known for solid tone and simple design favored by players for its punchy sound and reliable performance.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('BG-M4B8R3','Incredible Image Bass Guitar','Evergreen Guitar Works',15,1849.99,'Bass Guitar','https://media.guitarcenter.com/is/image/MMGS7/K76909000003000-02-600x600.jpg','Classic guitar with warm balanced tone and comfortable playability cherished by players for its expressive sound and timeless design.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('BG-G4J3I9','Zigzag Zenith Bass Guitar','Zenith String Instruments',2,1999.99,'Bass Guitar','https://media.guitarcenter.com/is/image/MMGS7/L90911000001000-02-600x600.jpg','Reliable option with balanced tone and comfortable playability perfect for live performances and recording sessions with its versatile sound and stage-ready design.');
+                
+                    insert into product (product_id,product_name,product_manufacturer,product_qty_remaining,product_price,product_category,product_img_url,product_description) values ('BG-C2A7N5','Encroaching Entropy Bass Guitar','Zenith String Instruments',1,3299.99,'Bass Guitar','https://media.guitarcenter.com/is/image/MMGS7/L99945000001000-02-600x600.jpg','High-performance model with fast neck and hot pickups perfect for shredding and heavy music with its sleek design and aggressive tone.');
+                

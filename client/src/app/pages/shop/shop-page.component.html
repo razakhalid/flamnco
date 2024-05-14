@@ -2,75 +2,29 @@
   <div class="categories-menu">
     <h2 class="font-bold text-center">Shop by Category</h2>
     <div class="grid mt-md">
-      <div
-        *ngFor="let category of categories"
-        class="item"
-        (click)="filterByCategory(category)"
-      >
-        <img [src]="category.imgUrl" [alt]="category.label">
-        <p class="font-bold mt-xxs">{{ category.label }}</p>
-      </div>
+      <button
+        class="border bg-white rounded clickable bg-hover py-xxs"
+        [ngClass]="{ 'active' : filter.name === productService.activeFilter }"
+        *ngFor="let filter of filters"
+        (click)="filterProducts(filter.name)">{{ filter.label }}
+      </button>
     </div>
   </div>
 
   <section>
     <div class="grid mt-md">
       <div
-        class="item clickable"
+        class="item clickable border-hover"
         *ngFor="let product of products"
-        (click)="openProduct(product.product_id)"
+        [routerLink]="['/product', product.product_id]"
       >
-        <img src="../../../assets/electric-guitar.jpeg" alt="">
+        <img [src]="product && product.product_img_url" alt="">
         <p class="font-bold mt-xxs">{{ product.product_name }}</p>
         <p class="font-light mt-xxs">{{ product.product_manufacturer }}</p>
         <p class="text-highlight mt-xxs">{{ product.product_price }}</p>
       </div>
     </div>
   </section>
-
-<!--  <form (ngSubmit)="handleSubmit()">-->
-<!--    <div>-->
-<!--      <label for="customer_name">Name: </label>-->
-<!--      <input id="customer_name" type="text" name="customer_name" [ngModel]="checkout_info.customer_name"/>-->
-<!--    </div>-->
-<!--    <div>-->
-<!--      <label for="customer_phone">Phone:  </label>-->
-<!--      <input id="customer_phone" type="text" name="customer_phone" [ngModel]="checkout_info.customer_phone"/>-->
-<!--    </div>-->
-<!--    <div>-->
-<!--      <label for="delivery_address_1">Delivery Address Line 1: </label>-->
-<!--      <input id="delivery_address_1" type="text" name="delivery_address_1" [ngModel]="checkout_info.delivery_address_1"/>-->
-<!--    </div>-->
-<!--    <div>-->
-<!--      <label for="delivery_address_2">Delivery Address Line 2: </label>-->
-<!--      <input id="delivery_address_2" type="text" name="delivery_address_2" [ngModel]="checkout_info.delivery_address_2"/>-->
-<!--    </div>-->
-<!--    <div>-->
-<!--      <label for="delivery_address_city">City: </label>-->
-<!--      <input id="delivery_address_city" type="text" name="delivery_address_city" [ngModel]="checkout_info.delivery_address_city"/>-->
-<!--    </div>-->
-<!--    <div>-->
-<!--      <label for="delivery_address_state">State: </label>-->
-<!--      <input id="delivery_address_state" type="text" name="delivery_address_state" [ngModel]="checkout_info.delivery_address_state"/>-->
-<!--    </div>-->
-<!--    <div>-->
-<!--      <label for="delivery_address_zip">ZIP: </label>-->
-<!--      <input id="delivery_address_zip" type="text" name="delivery_address_zip" [ngModel]="checkout_info.delivery_address_zip"/>-->
-<!--    </div>-->
-<!--    <div>-->
-<!--      <label for="delivery_address_country">Country: </label>-->
-<!--      <input id="delivery_address_country" type="text" name="delivery_address_country" [ngModel]="checkout_info.delivery_address_country"/>-->
-<!--    </div>-->
-<!--    <input type="hidden" name="order_total" [ngModel]="checkout_info.order_total"/>-->
-<!--    <input type="hidden" name="order_product_ids"  [ngModel]="checkout_info.order_product_ids"/>-->
-
-<!--    <h3>Order Total: ${{ checkout_info.order_total }}</h3>-->
-<!--    <br>-->
-<!--    <div>-->
-<!--      <br>-->
-<!--      <button type="submit" style="font-size: 1.25rem;">Place Order</button>-->
-<!--    </div>-->
-<!--  </form>-->
 </div>
 
 <style>
