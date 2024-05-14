@@ -25,5 +25,20 @@ export class CartComponent {
     }
   ]
   
-  
+  getTotal() : number {
+    if(this.products === undefined) { return 0; } /* if it's undefined the total is 0 */
+
+    let total = 0;
+
+    if(typeof this.products != undefined) {
+      for(var prod of this.products) { total += prod.product_price; }
+    }
+    return total;
+  }
+
+  TOTAL = this.getTotal();
+
+  removeFromCart(): void {
+    console.log("Button Works");
+  }
 }

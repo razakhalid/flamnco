@@ -10,11 +10,21 @@
             <ng-template #elseBlock>
                 <table>
                     <tr *ngFor="let prod of products">
+                        <td><button (click)="removeFromCart()" style = "float: right">Remove</button></td>
+                        <td></td>
                         <td><img [src] = "prod.product_img_url" ></td>
                         <td><strong>{{prod.product_name}}</strong></td>
-                        <td><strong>{{prod.product_price}}</strong></td>
+                        <td></td>
+                        <td>${{prod.product_price}}</td>
                     </tr>
                 </table>
+                <br><br>
+                <div class = "your-total" style = "float: left">
+                    Your Total:
+                </div>
+                <div class = "total" style = "float: right">
+                    ${{TOTAL}}
+                </div>
             </ng-template>
         </div>
     </div>
