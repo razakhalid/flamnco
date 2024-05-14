@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Product } from '../../types';
-import {NgFor, NgIf} from "@angular/common";
+import { NgFor, NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-cart',
@@ -24,4 +24,25 @@ export class CartComponent {
       product_description: "Really nice guitar"
     }
   ]
+
+  getTotal() : number {
+    if(this.products === undefined) { return 0; } /* if it's undefined the total is 0 */
+
+    let total = 0;
+
+    if(typeof this.products != undefined) {
+      for(var prod of this.products) { total += prod.product_price; }
+    }
+    return total;
+  }
+
+  TOTAL = this.getTotal();
+
+  removeFromCart(): void {
+    console.log("Remove Button Works");
+  }
+
+  checkOut(): void {
+    console.log("Check Out Button Works");
+  }
 }
