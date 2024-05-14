@@ -70,9 +70,12 @@ h1, h2, h3, h4, h5, h6, p, a, button {
 
 .text-center { text-align: center; }
 
+/* SPACING */
 .mt-xxs { margin-top: var(--gap-xxs); }
 .mt-xs { margin-top: var(--gap-xs); }
 .mt-md { margin-top: var(--gap-md); }
+.mx-md { margin-left: var(--gap-md); margin-right: var(--gap-md); }
+.mx-xs { margin-left: var(--gap-xs); margin-right: var(--gap-xs); }
 
 .py-xxs { padding-top: var(--gap-xxs); padding-bottom: var(--gap-xxs); }
 
