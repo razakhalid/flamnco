@@ -5,7 +5,8 @@
   "main": "server/src/server.js",
   "scripts": {
     "start": "node server/src/server.js",
-    "test": "jest"
+    "test": "jest",
+    "build": "npm run build --prefix client"
   },
   "jest": {
     "modulePathIgnorePatterns": [
