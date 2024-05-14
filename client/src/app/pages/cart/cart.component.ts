@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import {Component, inject} from '@angular/core';
 import { Product } from '../../types';
 import { NgFor, NgIf } from '@angular/common';
+import {CartService} from "../../services/cart.service";
 
 @Component({
   selector: 'app-cart',
@@ -10,21 +11,12 @@ import { NgFor, NgIf } from '@angular/common';
   styleUrl: './cart.component.css'
 })
 export class CartComponent {
-  products: Array<Product> | undefined = [
-    {
-      product_id: "EG-5E6F7G8H", product_name: "Midnight Sparkle Electric Guitar", product_manufacturer: "NovaSound Guitar Co.",
-      product_qty_remaining: 3, product_price: 249.99, product_category: "electric",
-      product_img_url: "https://media.guitarcenter.com/is/image/MMGS7/L69587000003000-02-600x600.jpg",
-      product_description: "Really nice guitar"
-     },
-    {
-      product_id: "CG-J7K4", product_name: "Serenade Symphony Classical Guitar", product_manufacturer: "Harmony Forge Guitars",
-      product_qty_remaining: 1, product_price: 356.78, product_category: "classical",
-      product_img_url: "https://media.guitarcenter.com/is/image/MMGS7/J22561000001000-02-600x600.jpg",
-      product_description: "Really nice guitar"
-    }
-  ]
-
+  cartService:CartService = inject(CartService);
+  products: any;
+  ngOnInit(){
+    const products = this.cartService.getProductsInCart();
+    if (products) this.products = Object.values(products);
+  }
   getTotal() : number {
     if(this.products === undefined) { return 0; } /* if it's undefined the total is 0 */
 
@@ -38,8 +30,14 @@ export class CartComponent {
 
   TOTAL = this.getTotal();
 
-  removeFromCart(): void {
-    console.log("Remove Button Works");
+  removeFromCart(product_id: string): void {
+    this.cartService.removeProductFromCart(product_id);
+    this.products = this.products.filter((product: any) => product.id !== product_id);
+  }
+
+  removeAllFromCart(): void {
+    this.cartService.removeAllFromCart();
+    this.products = [];
   }
 
   checkOut(): void {

@@ -14,33 +14,24 @@
   <section>
     <div class="grid mt-md">
       <div
-        class="item clickable border-hover"
+        class="item"
         *ngFor="let product of products"
-        [routerLink]="['/product', product.product_id]"
       >
         <img [src]="product && product.product_img_url" alt="">
         <p class="font-bold mt-xxs">{{ product.product_name }}</p>
         <p class="font-light mt-xxs">{{ product.product_manufacturer }}</p>
         <p class="text-highlight mt-xxs">{{ product.product_price }}</p>
+        <div class="flex justify-between">
+          <button
+            class="mt-xs bg-white border py-xxs px-xs rounded clickable mx-xxs bg-hover"
+            [routerLink]="['/product', product.product_id]"
+          >View Details</button>
+          <button
+            class="mt-xs bg-primary text-white py-xxs px-xs rounded clickable mx-xxs bg-hover text-dark-hover"
+            (click)="cartService.addToCart(product)"
+          >Add to Cart</button>
+        </div>
       </div>
     </div>
   </section>
 </div>
-
-<style>
-  .shop-page {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  form {
-    border: 1px solid black;
-    padding: 2rem;
-  }
-  form div {
-    display: flex;
-    justify-content: space-between;
-    width: 400px;
-  }
-</style>

@@ -2,7 +2,7 @@
     <h2 class="font-bold">Your Cart</h2>
     <div class="cart-info">
         <div class="cart">
-            <div *ngIf="products === undefined || products.length == 0; then thenBlock else elseBlock"></div>
+            <div *ngIf="!products || !products.length; then thenBlock else elseBlock"></div>
             <ng-template #thenBlock> <!-- works! -->
                 <strong>Your shopping cart is empty.</strong><br>
                 Time to find some great guitars to play!
@@ -10,7 +10,12 @@
             <ng-template #elseBlock>
                 <table>
                     <tr *ngFor="let prod of products">
-                        <td><button (click)="removeFromCart()" style = "float: right">Remove</button></td>
+                        <td>
+                          <button
+                            (click)="removeFromCart(prod.product_id)"
+                            class="mt-xs bg-white border py-xxs px-xs rounded clickable mx-xxs bg-hover"
+                            style = "float: right">Remove</button>
+                        </td>
                         <td></td>
                         <td><img [src] = "prod.product_img_url" ></td>
                         <td><strong>{{prod.product_name}}</strong></td>
@@ -31,6 +36,10 @@
                 </div>
 
             </ng-template>
+          <button
+            class="mt-xs bg-white border py-xxs px-xs rounded clickable mx-xxs bg-hover"
+            (click)="removeAllFromCart()"
+          >Empty Cart</button>
         </div>
     </div>
 </div>

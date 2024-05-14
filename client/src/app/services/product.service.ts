@@ -26,6 +26,14 @@ export class ProductService {
     console.log(this.products);
     return this.products.find(product => product.product_id === id);
   }
+  async findAllByIds(ids: Array<string>) {
+    const found = [];
+    ids.forEach(id => {
+
+    })
+    if (!this.products.length) await this.getProducts();
+    return this.products.filter(({ product_id }) => ids.includes(product_id));
+  }
   filterProducts(filter: string) {
     this.activeFilter = filter;
     console.log(filter)

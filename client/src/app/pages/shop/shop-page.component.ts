@@ -6,6 +6,7 @@ import {ProductService} from "../../services/product.service";
 import {LoadingAnimationComponent} from "../../components/loading-animation/loading-animation.component";
 import {LoadingAnimationService} from "../../services/loading-animation.service";
 import {RouterLink} from "@angular/router";
+import {CartService} from "../../services/cart.service";
 
 @Component({
   selector: 'app-shop',
@@ -16,6 +17,7 @@ import {RouterLink} from "@angular/router";
 })
 export class ShopPageComponent {
   productService:ProductService = inject(ProductService);
+  cartService:CartService = inject(CartService);
   products: any = [];
   filters: Array<Filter> = [
     { name: "Electric Guitar", label: "Electric Guitars" },
