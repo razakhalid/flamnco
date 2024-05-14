@@ -39,6 +39,10 @@ export class CartComponent {
   TOTAL = this.getTotal();
 
   removeFromCart(): void {
-    console.log("Button Works");
+    console.log("Remove Button Works");
+  }
+
+  checkOut(): void {
+    console.log("Check Out Button Works");
   }
 }
