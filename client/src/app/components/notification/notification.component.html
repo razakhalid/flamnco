@@ -1,0 +1,14 @@
+<div
+  class="notification text-center flex justify-center mt-sm mx-xs py-xxs flex"
+  [ngClass]="{ 'success': notificationService.getNotification().type === 'success' }"
+  *ngIf="notificationService.getNotification() && notificationService.getNotification().type"
+>
+  <p class="text-green text-center">{{ notificationService.getNotification().message }}</p>
+  <a
+    class="mx-xs"
+    *ngIf="notificationService.getNotification().navigateTo.path"
+    [routerLink]="notificationService.getNotification().navigateTo.path"
+  >
+    {{ notificationService.getNotification().navigateTo.label }}
+  </a>
+</div>

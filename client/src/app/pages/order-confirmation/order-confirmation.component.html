@@ -1,0 +1,11 @@
+<p class="text-center text-lg">Thank you for shopping with us!</p>
+
+<div class="mt-sm" *ngIf="checkoutService.orderId">
+  <p class="text-center">
+    Your order number is <strong>{{ checkoutService.orderId.toUpperCase() }}</strong>.
+  </p>
+
+  <p class="text-center mt-sm">
+    Please save this number for tracking or customer support in the future.
+  </p>
+</div>

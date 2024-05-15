@@ -1,0 +1,18 @@
+<table style="border-collapse: collapse;">
+  <thead>
+  <tr class="text-center">
+    <td class="font-bold border py-xxs px-xs">Order ID</td>
+    <td class="font-bold border py-xxs px-xs">Order Total</td>
+    <td class="font-bold border py-xxs px-xs">Products in Order</td>
+    <td class="font-bold border py-xxs px-xs">Customer Name</td>
+  </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let order of orders" class="text-center">
+      <td class="border py-xxs">{{ order.order_id.toUpperCase() }}</td>
+      <td class="border py-xxs">${{ order.order_total }}</td>
+      <td class="border py-xxs">{{ order.order_product_ids }}</td>
+      <td class="border py-xxs">{{ order.customer_name }}</td>
+    </tr>
+  </tbody>
+</table>

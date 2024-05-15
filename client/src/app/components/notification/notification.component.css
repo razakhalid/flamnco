@@ -1,0 +1,13 @@
+.notification {
+  position: fixed;
+  top: 48px;
+  border-radius: var(--border-radius-sm);
+  width: 90%;
+  max-width: 1200px;
+}
+.notification.success {
+  background-color: #e7ffe7;
+}
+.text-green {
+  color: #006200;
+}
