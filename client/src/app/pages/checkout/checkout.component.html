@@ -1,0 +1,211 @@
+<div class="checkout-page flex">
+  <form [formGroup]="checkoutForm" (submit)="submitCheckout()" ngNativeValidate>
+    <h1>Checkout</h1>
+
+    <h2>Shipping Information</h2>
+    <div class="shipping grid-cols-2">
+      <label for="firstNameShipping">First name</label>
+      <input
+        type="text"
+        placeholder="First name"
+        formControlName="firstNameShipping"
+        id="firstNameShipping"
+        required
+      />
+
+      <label for="lastNameShipping">Last name</label>
+      <input
+        type="text"
+        placeholder="Last name"
+        formControlName="lastNameShipping"
+        id="lastNameShipping"
+        required
+      />
+
+      <label for="streetAddressShipping">Street address</label>
+      <input
+        type="text"
+        placeholder="Street address"
+        formControlName="streetAddressShipping"
+        id="streetAddressShipping"
+        required
+      />
+
+      <label for="cityShipping">City</label>
+      <input
+        type="text"
+        placeholder="City"
+        formControlName="cityShipping"
+        id="cityShipping"
+        required
+      />
+
+      <label for="stateShipping">State</label>
+      <input
+        type="text"
+        placeholder="State"
+        formControlName="stateShipping"
+        id="stateShipping"
+        required
+      />
+
+      <label for="zipShipping">ZIP Code</label>
+      <input
+        type="number"
+        placeholder="ZIP Code"
+        formControlName="zipShipping"
+        id="zipShipping"
+        required
+      />
+
+      <label for="countryShipping">Country</label>
+      <input
+        type="text"
+        placeholder="Country"
+        formControlName="countryShipping"
+        id="countryShipping"
+        required
+      />
+    </div>
+
+    <h2>Payment information</h2>
+    <div class="payment grid-cols-2">
+      <label for="firstNamePayment">First name</label>
+      <input
+        type="text"
+        placeholder="First name"
+        formControlName="firstNamePayment"
+        id="firstNamePayment"
+        required
+      />
+
+      <label for="lastNamePayment">Last name</label>
+      <input
+        type="text"
+        placeholder="Last name"
+        formControlName="lastNamePayment"
+        id="lastNamePayment"
+        required
+      />
+
+      <label for="cardNumber">Card number</label>
+      <input
+        type="number"
+        placeholder="Card number"
+        formControlName="cardNumber"
+        id="cardNumber"
+        required
+      />
+
+      <label for="expiration">Expiration (MM/YY)</label>
+      <input
+        type="text"
+        placeholder="Expiration"
+        formControlName="expiration"
+        id="expiration"
+        required
+      />
+
+      <label for="cvv">CVV Code</label>
+      <input
+        type="text"
+        placeholder="CVV Code"
+        formControlName="cvv"
+        id="cvv"
+        required
+      />
+    </div>
+
+    <div>
+      <label>
+        <input
+          type="checkbox"
+          id="sameAsShipping"
+          formControlName="sameAsShipping"
+        />
+        Billing address same as shipping address
+      </label>
+    </div>
+
+    <div class="billing grid-cols-2" *ngIf="!checkoutForm.value.sameAsShipping">
+      <h2>Billing Address</h2>
+      <label for="firstNameBilling">First name</label>
+      <input
+        type="text"
+        placeholder="First name"
+        formControlName="firstNameBilling"
+        id="firstNameBilling"
+      />
+
+      <label for="lastNameBilling">Last name</label>
+      <input
+        type="text"
+        placeholder="Last name"
+        formControlName="lastNameBilling"
+        id="lastNameBilling"
+      />
+      <br>
+      <label for="streetAddressBilling">Street address</label>
+      <input
+        type="text"
+        placeholder="Street address"
+        formControlName="streetAddressBilling"
+        id="streetAddressBilling"
+      />
+
+      <label for="cityBilling">City</label>
+      <input
+        type="text"
+        placeholder="City"
+        formControlName="cityBilling"
+        id="cityBilling"
+      />
+
+      <label for="stateBilling">State</label>
+      <input
+        type="text"
+        placeholder="State"
+        formControlName="stateBilling"
+        id="stateBilling"
+      />
+
+      <label for="zipBilling">ZIP Code</label>
+      <input
+        type="text"
+        placeholder="ZIP Code"
+        formControlName="zipBilling"
+        id="zipBilling"
+      />
+
+      <label for="countryBilling">Country</label>
+      <input
+        type="text"
+        placeholder="Country"
+        formControlName="countryBilling"
+        id="countryBilling"
+      />
+    </div>
+
+    <button
+      type="submit"
+      class="mt-xs bg-primary text-white py-xxs px-xs rounded clickable mx-xxs bg-hover text-dark-hover"
+    >Place Order</button>
+
+  </form>
+  <div>
+    <h1 class="text-center">Your Order</h1>
+    <div class="flex direction-column align-center">
+      <div *ngFor="let product of productsInCart">
+        <div class="flex align-center">
+          <img [src]="product.product_img_url" [alt]="product.product_name" />
+          <div>
+            <h3>{{ product.product_name }}</h3>
+            <p>${{ product.product_price }}</p>
+          </div>
+        </div>
+      </div>
+      <h2>Order total: ${{ checkoutService.getTotal() }}</h2>
+    </div>
+
+  </div>
+</div>

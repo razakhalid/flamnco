@@ -1,13 +1,17 @@
-<div class="product-page">
+<div class="product-page" *ngIf="product">
   <div class="product mt-md">
     <div class="flex justify-center align-center">
           <img [src]="product && product.product_img_url" [alt]="product && product.product_name"/>
       </div>
-    <div class="flex justify-center align-center direction-column text-center">
+    <div class="flex justify-center direction-column" style="max-width: 500px;">
       <h1 class="font-bold">{{ product && product.product_name }}</h1>
       <h2 class="text-highlight mt-xs">${{ product && product.product_price }}</h2>
       <p class="mt-xs">{{ product && product.product_manufacturer }}</p>
       <p class="mt-xs">{{ product && product.product_description }}</p>
+      <button
+        class="mt-md bg-primary text-white py-xxs px-xs rounded clickable mx-xxs bg-hover text-dark-hover"
+        (click)="checkoutService.addToCart(product)"
+      >Add to Cart</button>
     </div>
   </div>
 </div>

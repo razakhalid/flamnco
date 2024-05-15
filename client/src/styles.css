@@ -55,6 +55,7 @@ button { border: none; }
   column-gap: var(--gap-xs);
   row-gap: var(--gap-md);
 }
+.grid-cols-2 { display: grid; grid-template-columns: repeat(2, 1fr); }
 
 .grid .item {
   max-width: 100%;

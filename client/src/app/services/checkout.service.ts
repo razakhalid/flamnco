@@ -4,7 +4,7 @@ import {Product} from "../types";
 @Injectable({
   providedIn: 'root'
 })
-export class CartService {
+export class CheckoutService {
   productsInCart: any;
   addToCart(product: Product) {
     const { product_id } = product || {};
@@ -23,10 +23,11 @@ export class CartService {
     // @ts-ignore
     if (!this.productsInCart) this.productsInCart = JSON.parse(sessionStorage.getItem("productsInCart"));
     // console.log(this.productsInCart)
-    return this.productsInCart;
+    return Object.values(this.productsInCart);
   }
   removeProductFromCart(product: Product) {
-    const productsInCart = this.getProductsInCart();
+    // @ts-ignore
+    const productsInCart = { ...JSON.parse(sessionStorage.getItem("productsInCart")) };
     delete productsInCart[product.product_id];
     sessionStorage.setItem("productsInCart", JSON.stringify(productsInCart));
     alert(`${product.product_name} successfully removed from cart`);
@@ -38,5 +39,13 @@ export class CartService {
     this.productsInCart = {};
     alert(`All products successfully removed from cart`);
     // console.log(sessionStorage.getItem("productsInCart"));
+  }
+  getTotal(): number {
+    const productsInCart: any = this.getProductsInCart();
+    let total: number = 0;
+    productsInCart.forEach((p: Product) => {
+      total += Number(p.product_price)
+    });
+    return Number(total);
   }
 }

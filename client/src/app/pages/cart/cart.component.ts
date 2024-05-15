@@ -1,47 +1,34 @@
 import {Component, inject} from '@angular/core';
 import { Product } from '../../types';
 import { NgFor, NgIf } from '@angular/common';
-import {CartService} from "../../services/cart.service";
+import {CheckoutService} from "../../services/checkout.service";
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'app-cart',
   standalone: true,
-  imports: [NgFor, NgIf],
+  imports: [NgFor, NgIf, RouterLink],
   templateUrl: './cart.component.html',
   styleUrl: './cart.component.css'
 })
 export class CartComponent {
-  cartService:CartService = inject(CartService);
+  checkoutService:CheckoutService = inject(CheckoutService);
   products: any;
+  total: number = 0;
   ngOnInit(){
-    const products = this.cartService.getProductsInCart();
+    const products = this.checkoutService.getProductsInCart();
     if (products) this.products = Object.values(products);
+    this.total = this.checkoutService.getTotal();
+    console.log(this.total)
   }
-  getTotal() : number {
-    if(this.products === undefined) { return 0; } /* if it's undefined the total is 0 */
-
-    let total = 0;
-
-    if(typeof this.products != undefined) {
-      for(var prod of this.products) { total += prod.product_price; }
-    }
-    return total;
-  }
-
-  TOTAL = this.getTotal();
-
   removeFromCart(product: Product): void {
-    this.cartService.removeProductFromCart(product);
+    this.checkoutService.removeProductFromCart(product);
     this.products = this.products.filter((p: Product) => p.product_id !== product.product_id);
     // console.log(this.products);
   }
 
   removeAllFromCart(): void {
-    this.cartService.removeAllFromCart();
+    this.checkoutService.removeAllFromCart();
     this.products = [];
-  }
-
-  checkOut(): void {
-    console.log("Check Out Button Works");
   }
 }
