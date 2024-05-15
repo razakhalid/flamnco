@@ -15,26 +15,28 @@ export class CartService {
     sessionStorage.setItem("productsInCart", JSON.stringify(productsInCart));
     // @ts-ignore
     this.productsInCart = JSON.parse(sessionStorage.getItem("productsInCart"));
-    console.log(this.productsInCart)
+    // console.log(this.productsInCart)
+    alert(`${product.product_name} successfully added to cart`);
     return this.productsInCart;
   }
   getProductsInCart() {
     // @ts-ignore
-    // @ts-ignore
     if (!this.productsInCart) this.productsInCart = JSON.parse(sessionStorage.getItem("productsInCart"));
-    console.log(this.productsInCart)
+    // console.log(this.productsInCart)
     return this.productsInCart;
   }
-  removeProductFromCart(product_id: string) {
+  removeProductFromCart(product: Product) {
     const productsInCart = this.getProductsInCart();
-    delete productsInCart[product_id];
+    delete productsInCart[product.product_id];
     sessionStorage.setItem("productsInCart", JSON.stringify(productsInCart));
+    alert(`${product.product_name} successfully removed from cart`);
   }
   removeAllFromCart() {
     if (!this.productsInCart) return;
     // @ts-ignore
-    sessionStorage.getItem("productsInCart", JSON.stringify({}));
+    sessionStorage.setItem("productsInCart", JSON.stringify({}));
     this.productsInCart = {};
-    console.log(sessionStorage.getItem("productsInCart"));
+    alert(`All products successfully removed from cart`);
+    // console.log(sessionStorage.getItem("productsInCart"));
   }
 }

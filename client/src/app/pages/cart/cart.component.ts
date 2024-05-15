@@ -30,9 +30,10 @@ export class CartComponent {
 
   TOTAL = this.getTotal();
 
-  removeFromCart(product_id: string): void {
-    this.cartService.removeProductFromCart(product_id);
-    this.products = this.products.filter((product: any) => product.id !== product_id);
+  removeFromCart(product: Product): void {
+    this.cartService.removeProductFromCart(product);
+    this.products = this.products.filter((p: Product) => p.product_id !== product.product_id);
+    // console.log(this.products);
   }
 
   removeAllFromCart(): void {
