@@ -1,4 +1,4 @@
-import {Injectable} from '@angular/core';
+import {Injectable, isDevMode} from '@angular/core';
 import {Product} from "../types";
 
 @Injectable({
@@ -6,6 +6,7 @@ import {Product} from "../types";
 })
 export class CheckoutService {
   productsInCart: any;
+  baseUrl:string = (isDevMode() ? "http://localhost:8080" : window.location.origin) + '/api';
   addToCart(product: Product) {
     const { product_id } = product || {};
     // @ts-ignore
@@ -44,8 +45,32 @@ export class CheckoutService {
     const productsInCart: any = this.getProductsInCart();
     let total: number = 0;
     productsInCart.forEach((p: Product) => {
-      total += Number(p.product_price)
+      total += Number(Number(p.product_price).toFixed(2));
     });
-    return Number(total);
+    return total;
+  }
+  async submitCheckoutData(checkoutData: any) {
+    const productsInCart: any = this.getProductsInCart();
+    const orderTotal: number = this.getTotal();
+    checkoutData = {
+      ...checkoutData,
+      productsInCart: productsInCart,
+      orderTotal
+    }
+    const url:string = this.baseUrl + '/order';
+    try {
+      const response = await fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(checkoutData)
+      });
+      alert('Order placed successfully. Thank you for shopping with us!');
+      return await response.json();
+    } catch (err) {
+      console.error(err);
+      return err;
+    }
   }
 }

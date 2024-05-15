@@ -1,8 +1,10 @@
 const { postOrder } = require("../../models/orders.model");
 async function httpPostOrder(req, res) {
-    const { checkout_info } = req.body;
-    await postOrder(checkout_info);
-    return res.status(200).json();
+    try {
+        return await postOrder(req.body);
+    } catch (err) {
+        return res.status(500).send({ message: err.message });
+    }
 }
 
 module.exports = {
