@@ -1,1 +1,5 @@
 img { width: 150px; height: 150px; }
+input {
+  border: 0.5px solid var(--color-text-dark-gray);
+  border-radius: var(--border-radius-sm);
+}

@@ -21,10 +21,10 @@ export class ShopPageComponent {
   products: any = [];
   searchInput: string = "";
   filters: Array<Filter> = [
-    { name: "Electric Guitar", label: "Electric Guitars" },
-    { name: "Acoustic Guitar", label: "Acoustic Guitars" },
-    { name: "Classical Guitar", label: "Classical & Flamenco Guitars" },
-    { name: "Bass Guitar", label: "Bass Guitars" }
+    { name: "Electric Guitar", label: "Electric" },
+    { name: "Acoustic Guitar", label: "Acoustic" },
+    { name: "Classical Guitar", label: "Classical & Flamenco" },
+    { name: "Bass Guitar", label: "Bass" }
   ];
   loadingAnimationService: LoadingAnimationService = inject(LoadingAnimationService);
   ngOnInit(): void {

@@ -60,7 +60,6 @@ export class CheckoutComponent {
     });
   }
   ngOnInit() {
-    console.log(this.productsInCart);
-    this.checkoutService.getTotal();
+    this.productsInCart =  this.checkoutService.getProductsInCart();
   }
 }

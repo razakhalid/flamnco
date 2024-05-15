@@ -28,14 +28,14 @@
         </div>
     </div>
     <h3 class="mt-sm text-center text-lg">Your Total: <span class="text-highlight">${{ checkoutService.getTotal() }}</span></h3>
-    <div class="flex mt-sm justify-between align-center">
+    <div class="flex mt-sm justify-around align-center">
       <button
-        class="bg-white py-xxs px-xs rounded clickable mx-xxs bg-hover text-dark-hover text-sm border"
+        class="bg-white py-xxs px-xs rounded clickable mx-xxs bg-hover text-dark-hover text-sm border large"
         (click)="removeAllFromCart()"
       >Empty Cart
       </button>
       <button
-        class="bg-primary text-white py-xxs px-xs rounded clickable mx-xxs bg-hover text-dark-hover text-sm"
+        class="bg-primary text-white py-xxs px-xs rounded clickable mx-xxs bg-hover text-dark-hover text-sm large"
         routerLink="/checkout"
       >Checkout</button>
     </div>

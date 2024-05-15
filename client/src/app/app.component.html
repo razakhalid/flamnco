@@ -3,8 +3,8 @@
 </style>
 
 <app-nav></app-nav>
+<app-notification *ngIf="notificationService.getNotification().message" class="flex justify-center"></app-notification>
 <main class="main">
-<!--  <app-grid></app-grid>-->
   <app-loading-animation style="z-index: 1;"></app-loading-animation>
   <router-outlet/>
 </main>

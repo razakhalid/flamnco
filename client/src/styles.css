@@ -75,6 +75,7 @@ button { border: none; }
 .flex { display: flex; }
 .justify-center { justify-content: center; }
 .justify-between { justify-content: space-between; }
+.justify-around { justify-content: space-around; }
 .align-center { align-items: center; }
 .direction-column { flex-direction: column; }
 
@@ -124,16 +125,18 @@ a:hover { cursor: pointer; text-decoration: underline; }
 button.active { background-color: var(--color-light-gray); }
 
 /* COMPONENTS */
-button {
-  max-width: 200px;
+
+button.large {
   height: 40px;
-  width: 150px;
+  width: 120px;
+}
+button.small {
+  height: 30px;
+  width: 90px;
 }
 
 input {
-  border: 0.5px solid var(--color-text-dark-gray);
   height: 30px;
-  border-radius: var(--border-radius-sm);
   padding-left: var(--gap-xxs);
   padding-right: var(--gap-xxs);
 }
@@ -147,14 +150,14 @@ input[type="checkbox"] {
   .grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  .grid-cols-2 {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 @media(min-width: 680px) {
   .grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 

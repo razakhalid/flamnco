@@ -28,7 +28,7 @@ export class CartComponent {
   }
 
   removeAllFromCart(): void {
-    this.checkoutService.removeAllFromCart();
     this.products = [];
+    this.checkoutService.removeAllFromCart();
   }
 }

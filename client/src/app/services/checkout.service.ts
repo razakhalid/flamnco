@@ -1,14 +1,19 @@
 import {Injectable, isDevMode, inject} from '@angular/core';
 import {Product} from "../types";
 import {LoadingAnimationService} from "./loading-animation.service";
+import {Router} from "@angular/router";
+import {NotificationService} from "./notification.service";
 
 @Injectable({
   providedIn: 'root'
 })
 export class CheckoutService {
   productsInCart: any;
+  router: Router = inject(Router);
   baseUrl:string = (isDevMode() ? "http://localhost:8080" : window.location.origin) + '/api';
+  orderId: string = "";
   loadingAnimationService:LoadingAnimationService = inject(LoadingAnimationService);
+  notificationService:NotificationService = inject(NotificationService);
   addToCart(product: Product) {
     const { product_id } = product || {};
     // @ts-ignore
@@ -19,7 +24,14 @@ export class CheckoutService {
     // @ts-ignore
     this.productsInCart = JSON.parse(sessionStorage.getItem("productsInCart"));
     // console.log(this.productsInCart)
-    alert(`${product.product_name} successfully added to cart`);
+    this.notificationService.setNotification({
+      type: 'success',
+      message: `${product.product_name} successfully added to cart`,
+      navigateTo: {
+        path: '/cart',
+        label: 'View Cart'
+      }
+    });
     return this.productsInCart;
   }
   getProductsInCart() {
@@ -34,23 +46,31 @@ export class CheckoutService {
     const productsInCart = { ...JSON.parse(sessionStorage.getItem("productsInCart")) };
     delete productsInCart[product.product_id];
     sessionStorage.setItem("productsInCart", JSON.stringify(productsInCart));
-    alert(`${product.product_name} successfully removed from cart`);
+    this.notificationService.setNotification({
+      type: 'success',
+      message: `${product.product_name} successfully removed from cart`,
+      navigateTo: undefined
+    });
   }
   removeAllFromCart() {
     if (!this.productsInCart) return;
     // @ts-ignore
     sessionStorage.setItem("productsInCart", JSON.stringify({}));
     this.productsInCart = {};
-    alert(`All products successfully removed from cart`);
+    this.notificationService.setNotification({
+      type: 'success',
+      message: `Products successfully removed from cart`,
+      navigateTo: undefined
+    });
     // console.log(sessionStorage.getItem("productsInCart"));
   }
   getTotal(): number {
     const productsInCart: any = this.getProductsInCart();
     let total: number = 0;
     productsInCart.forEach((p: Product) => {
-      total += Number(Number(p.product_price).toFixed(2));
+      total += Number(p.product_price);
     });
-    return total;
+    return Number(total.toFixed(2));
   }
   async submitCheckoutData(checkoutData: any) {
     const productsInCart: any = this.getProductsInCart();
@@ -70,9 +90,19 @@ export class CheckoutService {
         },
         body: JSON.stringify(checkoutData)
       });
-      alert('Order placed successfully. Thank you for shopping with us!');
       this.loadingAnimationService.stopLoading();
-      return await response.json();
+      const { message, orderId } = await response.json();
+      this.notificationService.setNotification({
+        type: "success",
+        message: message,
+        navigateTo: {
+          path: "/shop",
+          label: "Keep Shopping"
+        }
+      });
+      this.orderId = orderId;
+      this.router.navigateByUrl('/confirmation');
+      return;
     } catch (err) {
       console.error(err);
       return err;
