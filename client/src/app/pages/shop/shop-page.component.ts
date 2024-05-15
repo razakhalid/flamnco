@@ -41,6 +41,7 @@ export class ShopPageComponent {
   };
   ngOnInit(): void {
     this.getAllProducts();
+    this.productService.activeFilter = "";
   }
   async getAllProducts() {
     this.loadingAnimationService.startLoading();
