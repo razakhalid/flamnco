@@ -1,5 +1,4 @@
 import {Component, isDevMode, inject} from '@angular/core';
-import {FormsModule} from "@angular/forms";
 import {NgFor, NgClass} from "@angular/common";
 import {Filter, Product} from "../../types";
 import {ProductService} from "../../services/product.service";
@@ -7,11 +6,12 @@ import {LoadingAnimationComponent} from "../../components/loading-animation/load
 import {LoadingAnimationService} from "../../services/loading-animation.service";
 import {RouterLink} from "@angular/router";
 import {CheckoutService} from "../../services/checkout.service";
+import {FormsModule, NgModel} from "@angular/forms";
 
 @Component({
   selector: 'app-shop',
   standalone: true,
-  imports: [FormsModule, NgFor, LoadingAnimationComponent, RouterLink, NgClass],
+  imports: [NgFor, LoadingAnimationComponent, RouterLink, NgClass, FormsModule],
   templateUrl: './shop-page.component.html',
   styleUrl: './shop-page.component.css'
 })
@@ -19,6 +19,7 @@ export class ShopPageComponent {
   productService:ProductService = inject(ProductService);
   checkoutService:CheckoutService = inject(CheckoutService);
   products: any = [];
+  searchInput: string = "";
   filters: Array<Filter> = [
     { name: "Electric Guitar", label: "Electric Guitars" },
     { name: "Acoustic Guitar", label: "Acoustic Guitars" },
@@ -38,7 +39,7 @@ export class ShopPageComponent {
     order_total: 576.99,
     order_product_ids: "EG-4ZZ5A6BB7C"
   };
-  ngOnInit() {
+  ngOnInit(): void {
     this.getAllProducts();
   }
   async getAllProducts() {

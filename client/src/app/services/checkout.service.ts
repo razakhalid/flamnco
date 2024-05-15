@@ -22,9 +22,10 @@ export class CheckoutService {
   }
   getProductsInCart() {
     // @ts-ignore
-    if (!this.productsInCart) this.productsInCart = JSON.parse(sessionStorage.getItem("productsInCart"));
+    const productsInCart = JSON.parse(sessionStorage.getItem("productsInCart"));
+    this.productsInCart = productsInCart;
     // console.log(this.productsInCart)
-    return Object.values(this.productsInCart);
+    return Object.values(productsInCart);
   }
   removeProductFromCart(product: Product) {
     // @ts-ignore

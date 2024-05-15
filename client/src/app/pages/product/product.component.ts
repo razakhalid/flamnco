@@ -17,15 +17,12 @@ export class ProductComponent {
   productService: ProductService = inject(ProductService);
   product: Product | undefined;
   checkoutService: CheckoutService = inject(CheckoutService);
-  constructor() {
+  ngOnInit() {
     this.getProduct();
   }
   async getProduct() {
     const productIdFromRoute = this.route.snapshot.params['product_id'];
     this.product = await this.productService.findById(productIdFromRoute);
-    console.log(this.product);
-  }
-  addToCart(): void {
-    console.log("Button Works");
+    // console.log(this.product);
   }
 }

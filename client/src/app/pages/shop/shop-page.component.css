@@ -2,3 +2,15 @@ img {
   max-width: 150px;
   max-height: 150px;
 }
+
+.search input {
+  min-width: 375px;
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+  border: var(--border-hover);
+}
+
+.search button {
+  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+}
