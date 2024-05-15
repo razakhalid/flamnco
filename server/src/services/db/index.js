@@ -1,7 +1,7 @@
 const { Pool } = require("pg");
 
 const pool = new Pool({
-    connectionString: process.env.DATABASE_URL || "postgres://flamnco-main-db-03e1953ab9fc095ea:RySAx3M8WWzJpwDTns4phKphtFFURr@user-prod-us-east-2-1.cluster-cfi5vnucvv3w.us-east-2.rds.amazonaws.com:5432/flamnco-main-db-03e1953ab9fc095ea",
+    connectionString: process.env.DATABASE_URL,
     max: 3
 });
 
