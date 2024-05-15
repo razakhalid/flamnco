@@ -2,11 +2,6 @@ img {
     max-width: 180px;
     max-height: 180px;
 }
-.cart-page button {
-  max-width: 200px;
-  height: 40px;
-  width: 150px;
-}
 
 .cart-page button.small {
   height: 30px;

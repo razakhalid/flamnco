@@ -1,8 +1,8 @@
-<div class="checkout-page flex">
+<div class="checkout-page grid-cols-2">
   <form [formGroup]="checkoutForm" (submit)="submitCheckoutData()" ngNativeValidate>
     <h1>Checkout</h1>
 
-    <h2>Shipping Information</h2>
+    <h2 class="my-xs">Shipping Information</h2>
     <div class="shipping grid-cols-2">
       <label for="firstNameShipping">First name</label>
       <input
@@ -68,7 +68,7 @@
       />
     </div>
 
-    <h2>Payment information</h2>
+    <h2 class="my-xs">Payment information</h2>
     <div class="payment grid-cols-2">
       <label for="firstNamePayment">First name</label>
       <input
@@ -116,13 +116,13 @@
       />
     </div>
 
-    <div>
-      <label>
-        <input
-          type="checkbox"
-          id="sameAsShipping"
-          formControlName="sameAsShipping"
-        />
+    <div class="my-xs checkbox flex align-center">
+      <input
+        type="checkbox"
+        id="sameAsShipping"
+        formControlName="sameAsShipping"
+      />
+      <label class="mt-xs mx-xxs">
         Billing address same as shipping address
       </label>
     </div>
@@ -144,7 +144,7 @@
         formControlName="lastNameBilling"
         id="lastNameBilling"
       />
-      <br>
+
       <label for="streetAddressBilling">Street address</label>
       <input
         type="text"
@@ -186,26 +186,25 @@
       />
     </div>
 
-    <button
-      type="submit"
-      class="mt-xs bg-primary text-white py-xxs px-xs rounded clickable mx-xxs bg-hover text-dark-hover"
-    >Place Order</button>
-
-  </form>
-  <div>
-    <h1 class="text-center">Your Order</h1>
-    <div class="flex direction-column align-center">
-      <div *ngFor="let product of productsInCart">
-        <div class="flex align-center">
-          <img [src]="product.product_img_url" [alt]="product.product_name" />
-          <div>
-            <h3>{{ product.product_name }}</h3>
-            <p>${{ product.product_price }}</p>
-          </div>
+  <h1 class="text-center my-xs">Your Order</h1>
+  <div class="flex direction-column align-center">
+    <div *ngFor="let product of productsInCart" class="my-xs">
+      <div class="flex align-center">
+        <img [src]="product.product_img_url" [alt]="product.product_name" />
+        <div>
+          <h3>{{ product.product_name }}</h3>
+          <p>${{ product.product_price }}</p>
         </div>
       </div>
-      <h2>Order total: ${{ checkoutService.getTotal() }}</h2>
     </div>
-
+    <p class="text-lg">Your total: <span class="text-highlight">${{ checkoutService.getTotal() }}</span></p>
   </div>
+
+  <div class="flex justify-center mt-sm">
+    <button
+      type="submit"
+      class="bg-primary text-white py-xxs px-xs rounded clickable mx-xxs bg-hover text-dark-hover"
+    >Place Order</button>
+  </div>
+  </form>
 </div>

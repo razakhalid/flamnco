@@ -1,7 +1,7 @@
 <div class="cart-page">
   <h2 class="font-bold text-center">Your Cart</h2>
 
-  <div *ngIf="!products || !products.length; then thenBlock else elseBlock"></div>
+  <div *ngIf="!checkoutService.getProductsInCart().length; then thenBlock else elseBlock"></div>
   <ng-template #thenBlock>
     <div class="text-center">
       <p class="mt-md">Your cart is empty.</p>
@@ -11,7 +11,6 @@
     </div>
   </ng-template>
   <ng-template #elseBlock>
-    <h3 class="mt-sm text-center text-lg">Cart Total: ${{ checkoutService.getTotal() }}</h3>
     <div class="flex direction-column mt-xs">
       <div *ngFor="let prod of products" class="mt-xs">
           <div class="flex">
@@ -25,11 +24,10 @@
               >Remove
               </button>
             </div>
-
           </div>
-
         </div>
     </div>
+    <h3 class="mt-sm text-center text-lg">Your Total: <span class="text-highlight">${{ checkoutService.getTotal() }}</span></h3>
     <div class="flex mt-sm justify-between align-center">
       <button
         class="bg-white py-xxs px-xs rounded clickable mx-xxs bg-hover text-dark-hover text-sm border"

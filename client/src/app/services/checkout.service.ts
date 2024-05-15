@@ -1,5 +1,6 @@
-import {Injectable, isDevMode} from '@angular/core';
+import {Injectable, isDevMode, inject} from '@angular/core';
 import {Product} from "../types";
+import {LoadingAnimationService} from "./loading-animation.service";
 
 @Injectable({
   providedIn: 'root'
@@ -7,6 +8,7 @@ import {Product} from "../types";
 export class CheckoutService {
   productsInCart: any;
   baseUrl:string = (isDevMode() ? "http://localhost:8080" : window.location.origin) + '/api';
+  loadingAnimationService:LoadingAnimationService = inject(LoadingAnimationService);
   addToCart(product: Product) {
     const { product_id } = product || {};
     // @ts-ignore
@@ -25,7 +27,7 @@ export class CheckoutService {
     const productsInCart = JSON.parse(sessionStorage.getItem("productsInCart"));
     this.productsInCart = productsInCart;
     // console.log(this.productsInCart)
-    return Object.values(productsInCart);
+    return productsInCart && Object.values(productsInCart) || [];
   }
   removeProductFromCart(product: Product) {
     // @ts-ignore
@@ -59,6 +61,7 @@ export class CheckoutService {
       orderTotal
     }
     const url:string = this.baseUrl + '/order';
+    this.loadingAnimationService.startLoading();
     try {
       const response = await fetch(url, {
         method: "POST",
@@ -68,6 +71,7 @@ export class CheckoutService {
         body: JSON.stringify(checkoutData)
       });
       alert('Order placed successfully. Thank you for shopping with us!');
+      this.loadingAnimationService.stopLoading();
       return await response.json();
     } catch (err) {
       console.error(err);
