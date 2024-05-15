@@ -52,12 +52,12 @@ export class CheckoutService {
       navigateTo: undefined
     });
   }
-  removeAllFromCart() {
+  removeAllFromCart(showNotice: boolean) {
     if (!this.productsInCart) return;
     // @ts-ignore
     sessionStorage.setItem("productsInCart", JSON.stringify({}));
     this.productsInCart = {};
-    this.notificationService.setNotification({
+    if (showNotice) this.notificationService.setNotification({
       type: 'success',
       message: `Products successfully removed from cart`,
       navigateTo: undefined
@@ -101,6 +101,7 @@ export class CheckoutService {
         }
       });
       this.orderId = orderId;
+      this.removeAllFromCart(false);
       this.router.navigateByUrl('/confirmation');
       return;
     } catch (err) {

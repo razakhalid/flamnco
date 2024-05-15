@@ -123,68 +123,70 @@
           id="sameAsShipping"
           formControlName="sameAsShipping"
         />
-        <label class="mx-xxs">
+        <label class="mx-xxs" for="sameAsShipping">
           Billing address same as shipping address
         </label>
       </div>
-      <div class="billing grid-cols-2" *ngIf="!checkoutForm.value.sameAsShipping">
+      <div class="billing" *ngIf="!checkoutForm.value.sameAsShipping">
         <h2>Billing Address</h2>
-        <label for="firstNameBilling">First name</label>
-        <input
-          type="text"
-          placeholder="First name"
-          formControlName="firstNameBilling"
-          id="firstNameBilling"
-        />
+        <div class="grid-cols-2">
+          <label for="firstNameBilling">First name</label>
+          <input
+            type="text"
+            placeholder="First name"
+            formControlName="firstNameBilling"
+            id="firstNameBilling"
+          />
 
-        <label for="lastNameBilling">Last name</label>
-        <input
-          type="text"
-          placeholder="Last name"
-          formControlName="lastNameBilling"
-          id="lastNameBilling"
-        />
+          <label for="lastNameBilling">Last name</label>
+          <input
+            type="text"
+            placeholder="Last name"
+            formControlName="lastNameBilling"
+            id="lastNameBilling"
+          />
 
-        <label for="streetAddressBilling">Street address</label>
-        <input
-          type="text"
-          placeholder="Street address"
-          formControlName="streetAddressBilling"
-          id="streetAddressBilling"
-        />
+          <label for="streetAddressBilling">Street address</label>
+          <input
+            type="text"
+            placeholder="Street address"
+            formControlName="streetAddressBilling"
+            id="streetAddressBilling"
+          />
 
-        <label for="cityBilling">City</label>
-        <input
-          type="text"
-          placeholder="City"
-          formControlName="cityBilling"
-          id="cityBilling"
-        />
+          <label for="cityBilling">City</label>
+          <input
+            type="text"
+            placeholder="City"
+            formControlName="cityBilling"
+            id="cityBilling"
+          />
 
-        <label for="stateBilling">State</label>
-        <input
-          type="text"
-          placeholder="State"
-          formControlName="stateBilling"
-          id="stateBilling"
-        />
+          <label for="stateBilling">State</label>
+          <input
+            type="text"
+            placeholder="State"
+            formControlName="stateBilling"
+            id="stateBilling"
+          />
 
-        <label for="zipBilling">ZIP Code</label>
-        <input
-          type="text"
-          placeholder="ZIP Code"
-          formControlName="zipBilling"
-          id="zipBilling"
-        />
+          <label for="zipBilling">ZIP Code</label>
+          <input
+            type="text"
+            placeholder="ZIP Code"
+            formControlName="zipBilling"
+            id="zipBilling"
+          />
 
-        <label for="countryBilling">Country</label>
-        <input
-          type="text"
-          placeholder="Country"
-          formControlName="countryBilling"
-          id="countryBilling"
-        />
-      </div>
+          <label for="countryBilling">Country</label>
+          <input
+            type="text"
+            placeholder="Country"
+            formControlName="countryBilling"
+            id="countryBilling"
+          />
+        </div>
+        </div>
       <div class="flex justify-center mt-sm">
         <button
           type="submit"
