@@ -1,42 +1,48 @@
 <div class="cart-page">
-  <h2 class="font-bold">Your Cart</h2>
-  <div class="cart-info">
-    <div class="cart">
-        <div *ngIf="!products || !products.length; then thenBlock else elseBlock"></div>
-        <ng-template #thenBlock>
-          <strong>Your shopping cart is empty.</strong><br>
-            Time to find some great guitars to play!
-        </ng-template>
-        <ng-template #elseBlock>
-          <table>
-            <tr *ngFor="let prod of products">
-              <td>
-                  <button
-                    (click)="removeFromCart(prod)"
-                    class="mt-xs bg-white border py-xxs px-xs rounded clickable mx-xxs bg-hover"
-                  >Remove</button>
-                </td>
-              <td><img [src]="prod.product_img_url" [alt]="prod.product_name" ></td>
-              <td><strong>{{prod.product_name}}</strong></td>
-              <td></td>
-              <td>${{prod.product_price}}</td>
-            </tr>
-          </table>
-          <h3>Cart Total: ${{ checkoutService.getTotal() }}</h3>
+  <h2 class="font-bold text-center">Your Cart</h2>
 
-          <br>
-          <div class="checkoutButton">
-            <a
-              class="mt-xs bg-primary text-white py-xxs px-xs rounded clickable mx-xxs bg-hover text-dark-hover"
-              routerLink="/checkout"
-            >Checkout</a>
+  <div *ngIf="!products || !products.length; then thenBlock else elseBlock"></div>
+  <ng-template #thenBlock>
+    <div class="text-center">
+      <p class="mt-md">Your cart is empty.</p>
+      <p class="mt-xs">
+        Time to find some great guitars to play!
+      </p>
+    </div>
+  </ng-template>
+  <ng-template #elseBlock>
+    <h3 class="mt-sm text-center text-lg">Cart Total: ${{ checkoutService.getTotal() }}</h3>
+    <div class="flex direction-column mt-xs">
+      <div *ngFor="let prod of products" class="mt-xs">
+          <div class="flex">
+            <img [src]="prod.product_img_url" [alt]="prod.product_name" >
+            <div>
+              <strong>{{prod.product_name}}</strong>
+              <p class="mt-xxs">${{prod.product_price}}</p>
+              <button
+                (click)="removeFromCart(prod)"
+                class="mt-xs bg-white border py-xxs px-xs rounded clickable bg-hover small"
+              >Remove
+              </button>
+            </div>
+
           </div>
 
-        </ng-template>
-        <button
-          class="mt-xs bg-white border py-xxs px-xs rounded clickable mx-xxs bg-hover"
-          (click)="removeAllFromCart()"
-        >Empty Cart</button>
-      </div>
-  </div>
+        </div>
+    </div>
+    <div class="flex mt-sm justify-between align-center">
+      <button
+        class="bg-white py-xxs px-xs rounded clickable mx-xxs bg-hover text-dark-hover text-sm border"
+        (click)="removeAllFromCart()"
+      >Empty Cart
+      </button>
+      <button
+        class="bg-primary text-white py-xxs px-xs rounded clickable mx-xxs bg-hover text-dark-hover text-sm"
+        routerLink="/checkout"
+      >Checkout</button>
+    </div>
+  </ng-template>
+
+
 </div>
+

@@ -13,15 +13,17 @@
       </div>
     </div>
   </form>
-  <div class="categories-menu mt-md">
-<!--    <h2 class="font-bold text-center">Shop by Category</h2>-->
-    <div class="grid mt-xs">
-      <button
-        class="border bg-white rounded clickable bg-hover py-xxs"
-        [ngClass]="{ 'active' : filter.name === productService.activeFilter }"
-        *ngFor="let filter of filters"
-        (click)="filterProducts(filter.name)">{{ filter.label }}
-      </button>
+  <div class="flex justify-center">
+    <div class="categories-menu mt-md">
+      <!--    <h2 class="font-bold text-center">Shop by Category</h2>-->
+      <div class="grid mt-xs">
+        <button
+          class="border bg-white rounded clickable bg-hover py-xxs"
+          [ngClass]="{ 'active' : filter.name === productService.activeFilter }"
+          *ngFor="let filter of filters"
+          (click)="filterProducts(filter.name)">{{ filter.label }}
+        </button>
+      </div>
     </div>
   </div>
 

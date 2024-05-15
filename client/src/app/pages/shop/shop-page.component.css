@@ -4,7 +4,7 @@ img {
 }
 
 .search input {
-  min-width: 375px;
+  min-width: 200px;
   border-top-left-radius: var(--border-radius);
   border-bottom-left-radius: var(--border-radius);
   border: var(--border-hover);
@@ -13,4 +13,25 @@ img {
 .search button {
   border-top-right-radius: var(--border-radius);
   border-bottom-right-radius: var(--border-radius);
+}
+
+.categories-menu {
+  max-width: 1000px;
+}
+.categories-menu > div {
+  grid-template-columns: 1fr 1fr;
+  row-gap: var(--gap-xs);
+}
+.categories-menu button {
+  max-width: 150px;
+  min-height: 40px;
+}
+
+@media (min-width: 500px) {
+  .search input {
+    min-width: 350px;
+  }
+  .categories-menu > div {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
